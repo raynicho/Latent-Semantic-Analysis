@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 #search terms:
 query_vector = []
-<<<<<<< HEAD
+
 query_vector.append('fly')
 query_vector.append('car')
 query_vector.append('bird')
@@ -11,18 +11,7 @@ query_vector.append('speed')
 query_vector.append('motorcycle')
 
 #fly car bird speed motorcycle
-=======
-query_vector.append('fast')
-query_vector.append('plane')
-query_vector.append('animal')
-query_vector.append('computer')
-query_vector.append('scary')
-query_vector.append('death')
-query_vector.append('fire')
-query_vector.append('car')
-query_vector.append('truck')
-#fast plane animal computer scary death fire car truck
->>>>>>> dc17469d3e61a50be2db239d0f79d1a8d2ca6be2
+
 
 #get the stopwords
 stopwords = []
