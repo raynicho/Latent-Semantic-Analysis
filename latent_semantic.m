@@ -1,4 +1,4 @@
-function [document_rank_matrix] = latent_semantic()
+function [] = latent_semantic()
 %get the document term matrix
 filename = 'document_term_matrix.txt';
 delimiterIn = '\t';
@@ -41,3 +41,11 @@ document_size = document_size(2);
 for x = 1:document_size
     document_rank_matrix(x,:) = dot(query_new', document_vector_coordinates(:, x))/(norm(query_new')*norm(document_vector_coordinates(:, x)));
 end
+
+google_average = mean(document_rank_matrix(1:10));
+bing_average = mean(document_rank_matrix(11:20));
+yahoo_average = mean(document_rank_matrix(21:30));
+
+disp(google_average);
+disp(bing_average);
+disp(yahoo_average);
