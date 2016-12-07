@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html dir="ltr" lang="en-US">
+<!--<![endif]-->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<title>PAL-V | Ultimate Freedom</title>
+		<link rel="stylesheet" type="text/css" media="all" href="http://palvcms.mobgen.com/wp-content/themes/pal-v/style.css" />
+		<link rel="pingback" href="http://palvcms.mobgen.com/xmlrpc.php" />
+		<link rel="shortcut icon" href="http://palvcms.mobgen.com/wp-content/themes/pal-v/favicon.ico" />
+		<!--[if lt IE 9]>
+		<script src="http://palvcms.mobgen.com/wp-content/themes/pal-v/js/html5.js" type="text/javascript"></script>
+		<![endif]-->
+		<!--[if lt IE 8]>
+		<style>
+		#contact-form TABLE {
+            		width: 60%;
+		}
+		</style>
+		<![endif]-->
+		
+		<!-- jQuery -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<!-- fancyBox -->
+		<link rel="stylesheet" href="http://palvcms.mobgen.com/wp-content/themes/pal-v/js/fancybox/jquery.fancybox.css?v=2.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="http://palvcms.mobgen.com/wp-content/themes/pal-v/js/fancybox/jquery.fancybox.pack.js?v=2.0.5"></script>
+		<link rel="stylesheet" type="text/css" media="all" href="http://palvcms.mobgen.com/wp-content/themes/pal-v/js/jquery.jscrollpane.css" />
+		<script type="text/javascript" src="http://palvcms.mobgen.com/wp-content/themes/pal-v/js/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript" src="http://palvcms.mobgen.com/wp-content/themes/pal-v/js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="http://palvcms.mobgen.com/wp-content/themes/pal-v/js/jquery.cookie.js"></script>
+		<script type="text/javascript">
+			function shapeWrapper(lineHeight, height) {
+				var out = '';
+				var regression = lineHeight;
+				var lines = height / lineHeight;
+				
+				for(i=0; i < lines; i++) {
+					var pixels = (i * regression);
+					out += '<div style="float:right;clear:right;height:'+lineHeight+'px;width:'+pixels+'px"></div>';
+				}
+				document.write(out);
+			}
+			$(function() {
+				// SCROLLPANE FOR COUNTRY-INFO
+				$('.scroll-pane').jScrollPane({ verticalDragMaxHeight : 60, autoReinitialise: true });
+				
+				$('.fancybox, .iframe').fancybox({'titleShow':true, 'titlePosition':'inside'});
+				
+				$('.pane').hide();
+				$('#pane1').show();
+				$('a.tab-link').click(function(e){
+					e.preventDefault();
+					var open = $(this).attr('id');
+					$('.pane').hide();
+					$('#pane'+open).toggle();
+				});
+				
+				// MEMBER SLIDING DIVS
+				$('.member').click(function(e){
+					e.preventDefault();
+					if( $(this).hasClass('open') ) {
+						$(this).removeClass('open').find('.member-bio').hide();
+					} else {
+						$('.member').removeClass('open');
+						$('.member-bio').hide();
+						$(this).addClass('open').find('.member-bio').show();
+					}
+				});
+				$('.partner').hover(function(){
+					$(this).css({'cursor':'pointer'});
+				});
+				$('.partner').click(function(){
+					var url = $(this).children('.partner-link').attr('href');
+					window.open(url);
+					return false;
+				});
+				
+				/* $('.overlay').hover(function(){
+					$(this).stop(true,true).animate({opacity:0});
+				},
+				function(){
+					$(this).stop(true,true).animate({opacity:1});
+				}); */
+				
+				// SET-COOKIE FOR ANIMATION
+				if(true) { //!$.cookie('animation')
+					$('.page_headers').css('marginRight', -$(this).width());
+					$('.page_headers').animate({
+						marginRight: '0'
+					}, 1000 );
+					$('.angle').css('marginLeft', -$(this).width());
+					$('.angle').animate({
+						marginLeft: '0'
+					}, 1000 );
+					$('#social_media').css('marginRight', -$(this).width());
+					$('#social_media').animate({
+						marginRight: '0'
+					}, 1000 );
+					
+					/* $('#header').css('marginTop', '-72px');
+					$('#header').animate({
+						marginTop: '0'
+					}, 1000 ); */
+					
+					$.cookie('animation', true);
+				}
+				
+				// NAVIGATION HOVER EFFECTS
+				$('.sub-menu').hide();
+				
+					// IMAGES
+				var nav_bg_active 			= 'url(http://palvcms.mobgen.com/wp-content/themes/pal-v/images/nav_bg_active.jpg)';
+				var nav_bg_active2 			= 'url(http://palvcms.mobgen.com/wp-content/themes/pal-v/images/nav_bg_active2.jpg)';
+				var nav_bg					= 'url(http://palvcms.mobgen.com/wp-content/themes/pal-v/images/nav_bg.jpg)';
+				var nav_bg2					= 'url(http://palvcms.mobgen.com/wp-content/themes/pal-v/images/nav_bg2.jpg)';
+				var nav_bg_right			= 'url(http://palvcms.mobgen.com/wp-content/themes/pal-v/images/nav_bg_right.jpg)';
+				var nav_bg_right2		 	= 'url(http://palvcms.mobgen.com/wp-content/themes/pal-v/images/nav_bg_right2.jpg)';
+				var nav_bg_active_left		= 'url(http://palvcms.mobgen.com/wp-content/themes/pal-v/images/nav_bg_active_left.jpg)';
+				var nav_bg_active_left2		= 'url(http://palvcms.mobgen.com/wp-content/themes/pal-v/images/nav_bg_active_left2.jpg)';
+				var nav_bg_active_right		= 'url(http://palvcms.mobgen.com/wp-content/themes/pal-v/images/nav_bg_active_right.jpg)';
+				var nav_bg_active_right2 	= 'url(http://palvcms.mobgen.com/wp-content/themes/pal-v/images/nav_bg_active_right2.jpg)';
+				var nav_bg_active_active	= 'url(http://palvcms.mobgen.com/wp-content/themes/pal-v/images/nav_bg_active_active.jpg)';
+				var nav_bg_active_active2	= 'url(http://palvcms.mobgen.com/wp-content/themes/pal-v/images/nav_bg_active_active2.jpg)';
+				
+				var isAndroid = navigator.userAgent.match(/Android/i) != null;
+				
+					// NAV LI
+				$('.nav > li').hover(function(){
+					// HOVER IN
+					if( !$(this).hasClass('current-menu-item') && !$(this).children('ul').children('li').hasClass('current-menu-item') ) {
+						$('.sub-menu').stop(true,true).fadeOut();
+					}
+					
+					if ( $(this).parent('ul').hasClass('right') ) { // RIGHT NAV
+						$(this).css('background-image', nav_bg_active2);
+					} else { // LEFT NAV
+						$(this).css('background-image', nav_bg_active);
+					}
+					
+					if($(this).is('li:first-child')){
+						$(this).parent().parent().children('.li_img').hide();
+						$(this).parent().parent().children('.li_hover_img').show();
+					}
+					$(this).children().next('.sub-menu').stop(true,true).fadeIn();
+					// HOVER OUT
+				}, function(){
+					if ( $(this).parent('ul').hasClass('right') ) { // RIGHT NAV
+						if( !$(this).hasClass('current-menu-item') ) {
+							$(this).css('background-image', nav_bg2);
+						}
+					} else { // LEFT NAV
+						if( !$(this).hasClass('current-menu-item') ) {
+							$(this).css('background-image', nav_bg);
+						}
+					}
+					if($(this).is('li:first-child') && !$(this).hasClass('current-menu-item') ){
+						$(this).parent().parent().children('.li_hover_img').hide();
+						$(this).parent().parent().children('.li_img').show();
+					}
+					$(this).children().next('.sub-menu').stop(true,true).fadeOut();
+				});
+				
+					// NAV LI A
+				$('.nav > li > a').hover(function(){
+					if ( $(this).parent('li').parent('ul').hasClass('right') ) { // RIGHT NAV
+						if( !$(this).parent('li').next('li').hasClass('current-menu-item') ) {
+							$(this).css('background-image', nav_bg_active_right2);
+						} else {
+							$(this).css('background-image', nav_bg_active_active2);
+						}
+						if( !$(this).parent('li').prev('li').hasClass('current-menu-item') ) {
+							$(this).parent('li').prev().children('a').css('background-image', nav_bg_active_left2);
+						} else {
+							$(this).parent('li').prev('li').children('a').css('background-image', nav_bg_active_active2);
+						}
+					} else { // LEFT NAV
+						if( !$(this).parent('li').next('li').hasClass('current-menu-item') ) {
+							$(this).css('background-image', nav_bg_active_right);
+						} else {
+							$(this).css('background-image', nav_bg_active_active);
+						}
+						if( !$(this).parent('li').prev('li').hasClass('current-menu-item') ) {
+							$(this).parent('li').prev('li').children('a').css('background-image', nav_bg_active_left);
+						} else {
+							$(this).parent('li').prev('li').children('a').css('background-image', nav_bg_active_active);
+						}
+					}
+				}, function(){
+					if ( $(this).parent('li').parent('ul').hasClass('right') ) { // RIGHT NAV
+						if( !$(this).parent('li').hasClass('current-menu-item') && !$(this).parent('li').prev('li').hasClass('current-menu-item') && !$(this).parent('li').next('li').hasClass('current-menu-item') ) {
+							$(this).css('background-image', nav_bg_right2);
+							$(this).parent('li').prev().children('a').css('background-image', nav_bg_right2);
+						}
+						else if( !$(this).parent('li').hasClass('current-menu-item') && $(this).parent('li').prev('li').hasClass('current-menu-item') ) {
+							$(this).css('background-image', nav_bg_right2);
+							$(this).parent('li').prev('li').children('a').css('background-image', nav_bg_active_right2);
+						}
+						else if( !$(this).parent('li').hasClass('current-menu-item') && $(this).parent('li').next('li').hasClass('current-menu-item') ) {
+							$(this).css('background-image', nav_bg_active_left2);
+							$(this).parent('li').prev('li').children('a').css('background-image', nav_bg_right2);
+						}
+					} else { // LEFT NAV
+						if( !$(this).parent('li').hasClass('current-menu-item') && !$(this).parent('li').prev('li').hasClass('current-menu-item') && !$(this).parent('li').next('li').hasClass('current-menu-item') ) {
+							$(this).css('background-image', nav_bg_right);
+							$(this).parent('li').prev('li').children('a').css('background-image', nav_bg_right);
+						}
+						else if( !$(this).parent('li').hasClass('current-menu-item') && $(this).parent('li').prev('li').hasClass('current-menu-item') ) {
+							$(this).css('background-image', nav_bg_right);
+							$(this).parent('li').prev('li').children('a').css('background-image', nav_bg_active_right);
+						}
+						else if( !$(this).parent('li').hasClass('current-menu-item') && $(this).parent('li').next('li').hasClass('current-menu-item') ) {
+							$(this).css('background-image', nav_bg_active_left);
+							$(this).parent('li').prev('li').children('a').css('background-image', nav_bg_right);
+						}
+					}
+				});
+				
+					// SUBNAV
+				$('.nav > li > ul').hover(function(){
+					if( !$(this).parent('li').hasClass('current-menu-item') ) {
+						if( $(this).parent('li').prev('li').hasClass('current-menu-item') ) {
+							$(this).prev('a').css('background-image', nav_bg_active_right)
+							.parent('li').prev('li').children('a').css('background-image', nav_bg_active_active);
+						} else if( $(this).parent('li').next('li').hasClass('current-menu-item') ) {
+							$(this).prev('a').css('background-image', nav_bg_active_active)
+							.parent('li').prev('li').children('a').css('background-image', nav_bg_active_left);
+						} else {
+							$(this).prev('a').css('background-image', nav_bg_active_right)
+							.parent('li').prev('li').children('a').css('background-image', nav_bg_active_left);
+						}
+					} 
+				}, function(){
+					if( !$(this).parent('li').hasClass('current-menu-item') ) {
+						if( $(this).parent('li').prev('li').hasClass('current-menu-item') ) {
+							$(this).prev('a').css('background-image', nav_bg_right)
+							.parent('li').prev('li').children('a').css('background-image', nav_bg_active_right);
+						} else if( $(this).parent('li').next('li').hasClass('current-menu-item') ) {
+							$(this).prev('a').css('background-image', nav_bg_active_left)
+							.parent('li').prev('li').children('a').css('background-image', nav_bg_right);
+						} else {
+							$(this).prev('a').css('background-image', nav_bg_right)
+							.parent('li').prev('li').children('a').css('background-image', nav_bg_right);
+						}
+					}
+				});
+				
+					// ACTIVE MENU
+				$('.nav > li').each(function(){
+					if ( $(this).hasClass('current-menu-item') && $(this).parent().hasClass('right') ) {
+						$(this).css('background-image', nav_bg_active2);
+						
+						$(this).children('a').css('background-image', nav_bg_active_right2);
+						
+						if($(this).is('li:first-child')){
+							$(this).parent().parent().children('.li_img').hide();
+							$(this).parent().parent().children('.li_hover_img').show();
+						} else {
+							$(this).prev().children('a').css('background-image', nav_bg_active_left2);
+						}
+						$(this).children().next('.sub-menu').fadeIn();
+					} else if( $(this).hasClass('current-menu-item') ) {
+						$(this).css('background-image', nav_bg_active);
+						
+						$(this).children('a').css('background-image', nav_bg_active_right);
+						if($(this).is('li:first-child')){
+							$(this).parent().parent().children('.li_img').hide();
+							$(this).parent().parent().children('.li_hover_img').show();
+						} else {
+							$(this).prev().children('a').css('background-image', nav_bg_active_left);
+						}
+					}
+				});
+				$('.nav > li > ul > li').each(function(){
+					if( $(this).hasClass('current-menu-item') ) {
+						$(this).parent('ul').parent('li').children('a').css({'text-decoration':'underline'});
+					}
+				}); // END NAVIGATION EFFECTS
+				
+				// ON CLICK FADE IN THE SUBMENU FOR DEVICES THAT DON'T SUPPORT :hover EFFECTS
+				if(isAndroid) {
+					//IF HAS CHILDREN
+					$('.nav > li > a').click(function(e){
+						if( $(this).parent().has('ul').length )
+						{
+							e.preventDefault();
+							$(this).parent('li').children('.sub-menu').fadeIn();
+						}
+					});
+				}
+				
+					// FAQ TOGGLE
+				$('.jspPane div').css({'margin':'5px 0 15px'}).hide();
+				$('.jspPane h4').css({'cursor':'pointer', 'padding':'4px 5px', 'margin-top':'5px'}).click(function() {
+					if( $(this).next('div').hasClass('open') ) {
+						$(this).removeClass('selected').next('div').removeClass('open').slideUp();
+					} else {
+						$('.jspPane div.open').removeClass('open').slideUp().prev('h4').removeClass('selected');
+						$(this).addClass('selected').next('div').addClass('open').slideDown();
+					}
+				});
+			});
+
+			
+			$(document).ready( function(){
+			
+				if( $.cookie('welcome_video') !== "yes" )
+				{
+                
+                    			if(navigator.userAgent.match(/iPad/i) != undefined)    {                    
+                      				  $.fancybox({  
+   							'href' : 'https://www.youtube.com/v/d_eAgJuEqfY?rel=0&autoplay=1',
+                       					 'type': 'inline',
+                            				 'autoSize'  : false,
+                            				 'width' : "80%",
+                            				 'height': "80%",
+                            				 'padding'     : 10,                            
+                        			  });
+                    			}
+                    			else {
+						$.fancybox({
+   							'href' : 'https://www.youtube.com/v/d_eAgJuEqfY?rel=0&autoplay=1',
+							'transitionIn'	: 'none',
+							'transitionOut'	: 'none',
+							'type' : 'swf'
+
+						});
+					}
+					$.cookie('welcome_video', 'yes');
+				} else {
+					$.cookie('welcome_video', $.cookie('welcome_video'));
+				}
+			});
+
+					</script>
+		<link rel="alternate" type="application/rss+xml" title="PAL-V &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="PAL-V &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="PAL-V &raquo; Home Comments Feed" href="/home/feed/" />
+<link rel='stylesheet' id='tubepress-css'  href='http://palvcms.mobgen.com/wp-content/plugins/tubepress/sys/ui/themes/default/style.css?ver=3.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='afg_colorbox_css-css'  href='http://palvcms.mobgen.com/wp-content/plugins/awesome-flickr-gallery-plugin/colorbox/colorbox.css?ver=3.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='afg_css-css'  href='http://palvcms.mobgen.com/wp-content/plugins/awesome-flickr-gallery-plugin/afg.css?ver=3.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://palvcms.mobgen.com/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
+<script type='text/javascript' src='http://palvcms.mobgen.com/wp-content/plugins/tubepress/sys/ui/static/js/tubepress.js?ver=3.3.1'></script>
+<script type='text/javascript' src='http://palvcms.mobgen.com/wp-content/plugins/awesome-flickr-gallery-plugin/colorbox/jquery.colorbox-min.js?ver=3.3.1'></script>
+<script type='text/javascript' src='http://palvcms.mobgen.com/wp-content/plugins/awesome-flickr-gallery-plugin/colorbox/mycolorbox.js?ver=3.3.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://palvcms.mobgen.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://palvcms.mobgen.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='next' title='The PAL-V ONE' href='/the-pal-v-one/' />
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='canonical' href='/' />
+<style type="text/css">/* Start writing your custom CSS here */</style><script type="text/javascript">function getTubePressBaseUrl(){return "/wp-content/plugins/tubepress";}</script>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+	</head>
+	<body class="home page page-id-330 page-template page-template-angle_medium-php single-author singular">
+<object id='vid-1' style='display:none'>
+<!--<iframe src="http://www.youtube.com/embed/VikE70iZPoM?rel=0&wmode=transparent&autoplay=1" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>-->
+<!--<iframe src="#" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>-->
+</object>
+		<div id="page" class="hfeed">
+			<div id="header">
+				<div id="branding">
+					<a href="/" title="PAL-V"><img src="http://palvcms.mobgen.com/wp-content/themes/pal-v/images/logo.png" /><h1>PAL-V</h1></a>
+					<!-- <h2 id="site-description"></h2> -->
+				</div>
+				<div>
+					<img class="li_img" style="float:left;" src="http://palvcms.mobgen.com/wp-content/themes/pal-v/images/nav_bg_first.jpg" />
+					<img class="li_hover_img" style="float:left;display:none;" src="http://palvcms.mobgen.com/wp-content/themes/pal-v/images/nav_bg_first_hover.jpg" />
+					<ul id="menu-main-menu" class="nav"><li id="menu-item-791" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-330 current_page_item menu-item-791"><a href="/">Home</a></li>
+<li id="menu-item-352" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-352"><a href="/the-pal-v-one/">The PAL-V ONE</a>
+<ul class="sub-menu">
+	<li id="menu-item-788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-788"><a href="/the-pal-v-one/">The PAL-V ONE</a></li>
+	<li id="menu-item-353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-353"><a href="/the-pal-v-one/the-pal-v-one-experience/">The PAL-V ONE experience</a></li>
+	<li id="menu-item-354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-354"><a href="/the-pal-v-one/transformation/">Transformation</a></li>
+	<li id="menu-item-355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-355"><a href="/the-pal-v-one/styling-and-design/">Styling and design</a></li>
+	<li id="menu-item-356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-356"><a href="/the-pal-v-one/technology/">Technology</a></li>
+	<li id="menu-item-357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-357"><a href="/the-pal-v-one/specifications/">Specifications</a></li>
+</ul>
+</li>
+<li id="menu-item-358" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-358"><a href="/licenses/">Licenses</a>
+<ul class="sub-menu">
+	<li id="menu-item-789" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-789"><a href="/licenses/">Licenses</a></li>
+	<li id="menu-item-360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360"><a href="/licenses/the-pal-v-simulator/">The PAL-V simulator</a></li>
+</ul>
+</li>
+<li id="menu-item-684" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-684"><a href="/pal-v-usage/">PAL-V ONE usage</a>
+<ul class="sub-menu">
+	<li id="menu-item-848" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-848"><a href="/pal-v-usage/">PAL-V ONE usage</a></li>
+	<li id="menu-item-364" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-364"><a href="/pal-v-usage/professional-customers/">Professional Customers</a></li>
+</ul>
+</li>
+<li id="menu-item-361" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-361"><a href="/company/">The Company</a>
+<ul class="sub-menu">
+	<li id="menu-item-790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-790"><a href="/company/">The Company</a></li>
+	<li id="menu-item-362" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-362"><a href="/company/team/">Team</a></li>
+	<li id="menu-item-4369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4369"><a href="/company/sales/">Sales</a></li>
+	<li id="menu-item-363" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-363"><a href="/company/partners/">Partners</a></li>
+	<li id="menu-item-370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-370"><a href="/company/jobs/">Jobs</a></li>
+</ul>
+</li>
+<li id="menu-item-366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-366"><a href="/press-media/">Press/Media</a>
+<ul class="sub-menu">
+	<li id="menu-item-365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-365"><a href="/press-media/news/">Pal-V news</a></li>
+	<li id="menu-item-732" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-732"><a href="/press-media/press/">Pal-V in the press</a></li>
+	<li id="menu-item-367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-367"><a href="/press-media/images/">Images</a></li>
+	<li id="menu-item-368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-368"><a href="/press-media/videos/">Videos</a></li>
+</ul>
+</li>
+</ul>				</div>
+				<div>
+					<ul id="menu-secondary-menu" class="nav right"><li id="menu-item-347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-347"><a href="/faq/">FAQ</a></li>
+<li id="menu-item-349" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-349"><a href="/contact/">Contact</a></li>
+</ul>					<img class="li_img" style="float:right;" src="http://palvcms.mobgen.com/wp-content/themes/pal-v/images/nav_bg_first2.jpg" />
+					<img class="li_hover_img" style="float:right;display:none;" src="http://palvcms.mobgen.com/wp-content/themes/pal-v/images/nav_bg_first_hover2.jpg" />
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="main">
+
+		<div class="page_headers">
+			<h2><span style="color:black;">PAL-V ONE<br/>writing history</span></h2>			<h3><span style="color:black;">Going Above And Beyond</span></h3>		</div>
+				
+		<div id="primary">
+			<div id="content" role="main">
+			
+				<div class="angle medium">
+					<script type="text/javascript">shapeWrapper('18', '740');</script>
+											<STYLE type="text/css">body {background-image: url('/wp-content/uploads/2012/03/home_1440x900.jpg');background-repeat: no-repeat;} #wrapper { background-color: transparent; }</style><p>For more than a century man has dreamed of the freedom provided by a flying car. The ultimate vehicle to go wherever and whenever you want to, easily overcoming all sorts of barriers. Now you can leave home and fly-drive to almost any destination!  Avoid traffic jams and cross lakes, fjords, rivers or mountain ranges like an eagle. Land on the other side and drive in your own vehicle to your final destination. In uncontrolled airspace you are in full command of your own time and destiny. This is what the PAL-V ONE is all about: it combines within one vehicle the freedom and excitement of flying like a bird in the sky with the choice of driving with breathtaking performance on the roads and highways.</p>
+<p>The launch of the PAL-V ONE marks a truly historic event: the birth of a new class of vehicles offering unprecedented freedom, adventure, flexibility and pleasure – all in one product!</p>
+										
+					
+					<div class="navigation">
+											<a href="/the-pal-v-one/" title="The PAL-V ONE">The PAL-V ONE &raquo;</a>
+										</div><!-- .navigation -->
+				</div>
+			
+			</div><!-- CONTENT -->
+		</div><!-- PRIMARY -->
+
+				<div id="social_media">
+					<a target="_blank" href="http://www.facebook.com/pages/PalV/314115081989479"><img src="http://palvcms.mobgen.com/wp-content/themes/pal-v/images/social_facebook.png"/></a>
+					<a target="_blank" href="https://twitter.com/#!/PalV_co"><img src="http://palvcms.mobgen.com/wp-content/themes/pal-v/images/social_twitter.png"/></a><br/>
+					<a target="_blank" href="http://www.flickr.com/photos/76633977@N08/"><img src="http://palvcms.mobgen.com/wp-content/themes/pal-v/images/social_flickr.png"/></a>
+					<a target="_blank" href="http://www.youtube.com/user/PalVco"><img src="http://palvcms.mobgen.com/wp-content/themes/pal-v/images/social_youtube.png"/></a>
+				</div>		
+			</div><!-- MAIN -->
+			
+			<footer id="colophon" role="contentinfo">
+				<div id="footer"><span>&copy;2016 PAL-V&reg; | Powered by <a href="http://www.mobgen.com/" target="_blank">MobGen</a></span></div>
+			</footer><!-- COLOPHON -->
+			<div class="clear"></div>
+		</div> <!-- PAGE -->
+		
+				
+		<script type="text/javascript">
+		 
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-21904391-20']);
+		  _gaq.push(['_setDomainName', 'none']);
+		  _gaq.push(['_setAllowLinker', true]);
+		  _gaq.push(['_trackPageview']);
+		 
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		 
+		</script>
+		
+	</body>
+</html>
+<!-- Dynamic page generated in 0.205 seconds. -->
+<!-- File not cached! Super Cache Couldn't write to: wp-content/cache/supercache/pal-v.com/144792984558477108a98bf5.80308722.tmp -->

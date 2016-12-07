@@ -1,0 +1,1602 @@
+
+
+
+<!DOCTYPE html>
+<html data-environment="production" class=" desktop">
+<head>
+
+  <title>Bird of Prey bike takes a new position on cycling</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwMGUFVbGwICU1RRDgIC"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":1,"licenseKey":"2798a8ea7c","agent":"","transactionName":"Y1BUNxcHV0IEUENYXVoacBYLBU1YCl0YUEBAXFUPABUXRwxWQEIcREBUDwwFZkcMVkBCCHVHQgoGClx1AEdWWF5iXFMUSwFcRQ==","applicationID":"12753935","errorBeacon":"bam.nr-data.net","applicationTime":122}</script>
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="When it comes to bicycles with different types of seating positions, everyone is familiar with uprights and recumbents. There is, however, a lesser-known third option – prone. Bird of Prey Bicycles is now offering a semi-prone aimed at everyday users. ">
+  <meta name="keywords" content="Cycling, Ergonomic">
+  <meta name="majestic-site-verification" content="MJ12_bc3bbe8b-38f0-448d-af91-1a222c1034aa">
+  <meta name='news_keywords' content='Cycling, Ergonomic'>
+  
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@nwtls" />
+    <meta name="twitter:title" content="Bird of Prey bike takes a new position on cycling" />
+    <meta name="twitter:description" content="When it comes to bicycles with different types of seating positions, everyone is familiar with uprights and recumbents. There is, however, a lesser-known third option – prone. Bird of Prey Bicycles is now offering a semi-prone aimed at everyday users. " />
+    <meta name="twitter:image" content="http://img-3.newatlas.com/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=crop&h=347&q=60&rect=0%2C91%2C1079%2C607&w=616&s=e3a2c0e43790ccf98aaa29689b0e0274" />
+    <meta name="twitter:image:alt" content="The Bird of Prey looking either cool or weird, depending on the observer" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://img-3.newatlas.com/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=crop&h=347&q=60&rect=0%2C91%2C1079%2C607&w=616&s=e3a2c0e43790ccf98aaa29689b0e0274"/>
+    <meta property="og:title" content="Bird of Prey bike takes a new position on cycling" />
+    <meta property="og:description" content="When it comes to bicycles with different types of seating positions, everyone is familiar with uprights and recumbents. There is, however, a lesser-known third option – prone. Bird of Prey Bicycles is now offering a semi-prone aimed at everyday users. " />
+    <meta property="og:url" content="http://newatlas.com/bird-of-prey-bike/39930/"/>
+
+  <link rel="canonical" href="http://newatlas.com/bird-of-prey-bike/39930/">
+  <script type="application/ld+json">
+    {
+    "@context": "http://schema.org", 
+    "@type": "Organization", 
+    "logo": {
+        "@type": "ImageObject", 
+        "url": "http://files.newatlas.com/logo/newatlas-logo-white-on-blue.png"
+    }, 
+    "name": "New Atlas", 
+    "sameAs": [
+        "https://en.wikipedia.org/wiki/New_Atlas", 
+        "https://facebook.com/nwtls", 
+        "https://flipboard.com/@NewAtlas", 
+        "https://twitter.com/nwtls"
+    ], 
+    "url": "http://newatlas.com/"
+}
+  </script>
+  
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org", 
+    "@type": "NewsArticle", 
+    "author": {
+        "@type": "Person", 
+        "description": "An experienced freelance writer, videographer and television producer, Ben's interest in all forms of innovation is particularly fanatical when it comes to human-powered transportation, film-making gear, environmentally-friendly technologies and anything that's designed to go underwater. He lives in Edmonton, Alberta, where he spends a lot of time going over the handlebars of his mountain bike, hanging out in off-leash parks, and wishing the Pacific Ocean wasn't so far away.", 
+        "image": {
+            "@type": "ImageObject", 
+            "url": "http://gizmag-avatars.imgix.net/127.jpg?auto=format%2Ccompress&fit=max&h=100&w=100&s=4eed44effc846fe96936d440bcc5b8cc"
+        }, 
+        "name": "Ben Coxworth", 
+        "url": "http://newatlas.com/author/ben-coxworth/"
+    }, 
+    "dateModified": "2015-10-19T23:01:00.789222+00:00", 
+    "datePublished": "2015-10-19T23:01:00.789222+00:00", 
+    "description": "When it comes to bicycles with different types of seating positions, everyone is familiar with uprights and recumbents. There is, however, a lesser-known third option \u2013 prone. Bird of Prey Bicycles is now offering a semi-prone aimed at everyday users. ", 
+    "headline": "Bird of Prey bike takes a new position on cycling", 
+    "image": {
+        "@type": "ImageObject", 
+        "caption": "The Bird of Prey looking either cool or weird, depending on the observer", 
+        "height": "347 px", 
+        "url": "http://img-3.newatlas.com/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=crop&h=347&q=60&rect=0%2C91%2C1079%2C607&w=616&s=e3a2c0e43790ccf98aaa29689b0e0274", 
+        "width": "616 px"
+    }, 
+    "mainEntityOfPage": "http://newatlas.com/bird-of-prey-bike/39930/", 
+    "publisher": {
+        "@type": "Organization", 
+        "logo": {
+            "@type": "ImageObject", 
+            "url": "http://files.newatlas.com/logo/newatlas-logo-white-on-blue.png"
+        }, 
+        "name": "New Atlas", 
+        "sameAs": [
+            "https://en.wikipedia.org/wiki/New_Atlas", 
+            "https://facebook.com/nwtls", 
+            "https://flipboard.com/@NewAtlas", 
+            "https://twitter.com/nwtls"
+        ], 
+        "url": "http://newatlas.com/"
+    }
+}
+</script>
+
+  <link rel="amphtml" href="http://newatlas.com/bird-of-prey-bike/39930/?amp=true">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://production-assetsbucket-wvksza8x3q2f.s3.amazonaws.com/c72a6c7a148451dcb35a6bdd1836e56bfa480d22/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://production-assetsbucket-wvksza8x3q2f.s3.amazonaws.com/c72a6c7a148451dcb35a6bdd1836e56bfa480d22/ico/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://production-assetsbucket-wvksza8x3q2f.s3.amazonaws.com/c72a6c7a148451dcb35a6bdd1836e56bfa480d22/ico/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="https://production-assetsbucket-wvksza8x3q2f.s3.amazonaws.com/c72a6c7a148451dcb35a6bdd1836e56bfa480d22/ico/manifest.json">
+  <link rel="mask-icon" href="https://production-assetsbucket-wvksza8x3q2f.s3.amazonaws.com/c72a6c7a148451dcb35a6bdd1836e56bfa480d22/ico/safari-pinned-tab.svg" color="#2800d1">
+  <link rel="shortcut icon" href="https://production-assetsbucket-wvksza8x3q2f.s3.amazonaws.com/c72a6c7a148451dcb35a6bdd1836e56bfa480d22/ico/favicon.ico">
+  <meta name="msapplication-config" content="https://production-assetsbucket-wvksza8x3q2f.s3.amazonaws.com/c72a6c7a148451dcb35a6bdd1836e56bfa480d22/ico/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  
+  <!-- Chartbeat Config -->
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js" async></script>
+  <script>WebFontConfig={custom:{families:['MarrSans','PublicoText']},timeout: 2000}</script>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.1/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.1/es5-sham.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+  <link type="text/css" href="https://d2n36zyhledaqq.cloudfront.net/c72a6c7a148451dcb35a6bdd1836e56bfa480d22/public.css" rel="stylesheet"/>
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+  <script type="text/javascript">
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+
+    var PREBID_TIMEOUT = 700;
+
+    function initAdserver() {
+        if (napbjs.initAdserverSet) return;
+        (function () {
+            var gads = document.createElement('script');
+            gads.async = true;
+            gads.type = 'text/javascript';
+            var useSSL = 'https:' == document.location.protocol;
+            gads.src = (useSSL ? 'https:' : 'http:') +
+                    '//www.googletagservices.com/tag/js/gpt.js';
+            var node = document.getElementsByTagName('script')[0];
+            node.parentNode.insertBefore(gads, node);
+        })();
+        napbjs.initAdserverSet = true;
+    };
+
+    setTimeout(initAdserver, PREBID_TIMEOUT);
+
+    var napbjs = napbjs || {};
+    napbjs.que = napbjs.que || [];
+
+    (function() {
+        var pbjsEl = document.createElement("script");
+        pbjsEl.type = "text/javascript";
+        pbjsEl.async = true;
+        pbjsEl.src = "https://d2n36zyhledaqq.cloudfront.net/c72a6c7a148451dcb35a6bdd1836e56bfa480d22/prebid.js";
+        var pbjsTargetEl = document.getElementsByTagName("head")[0];
+        pbjsTargetEl.insertBefore(pbjsEl, pbjsTargetEl.firstChild);
+    })();
+</script>
+
+  <script type="text/javascript">
+    var adUnits = [];
+
+    var naAds = (function(){
+        var adUnitData = [];
+        var adUnitDataRaw = [];
+
+        // Define adslots that don't require header bidding here
+        
+        var native_dfp = {"dfpSizes": ["fluid"], "name": "native"};
+        
+
+        // Define non-react adslots that require header bidding here
+        
+        var pushdown = {"sizeIds": [2], "bidSizes": [[728, 90]], "tagids": ["382213", "382211"], "name": "pushdown", "cts": [500128, 500130], "dfpSizes": [[728, 90], [970, 250]], "aolPlacementId": "4177041", "cfs": ["728X90", "970X250"], "zoneId": "214638"};
+        adUnitDataRaw.push(pushdown);
+        
+
+        
+        var skyscraper_right = {"sizeIds": [15, 10], "bidSizes": [[300, 250], [300, 600]], "tagids": ["382214"], "name": "skyscraper_right", "cts": [500126], "dfpSizes": [[300, 250], [300, 600], [160, 600]], "aolPlacementId": "4177040", "cfs": ["160X600"], "zoneId": "214636"};
+        adUnitDataRaw.push(skyscraper_right);
+        
+
+        
+        var island_top_right = {"sizeIds": [15, 10], "bidSizes": [[300, 250], [300, 600]], "tagids": ["382212", "382209"], "name": "island_top_right", "cts": [500127, 500129], "dfpSizes": [[300, 250], [300, 600], [160, 600]], "aolPlacementId": "4177039", "cfs": ["300X250", "300X600"], "zoneId": "214634"};
+        adUnitDataRaw.push(island_top_right);
+        
+
+        
+        var sticky_btf = {"sizeIds": [15, 10], "bidSizes": [[300, 250], [300, 600]], "tagids": ["382215", "382210"], "name": "sticky_btf", "cts": [500127, 500129], "dfpSizes": [[300, 250], [300, 600], [160, 600]], "aolPlacementId": "4177038", "cfs": ["300X250", "300X600"], "zoneId": "214634"};
+        adUnitDataRaw.push(sticky_btf);
+        
+
+        for (var x = 0; x < adUnitDataRaw.length; x++) {
+            adUnitData.push({
+                name: adUnitDataRaw[x].name,
+                sizes: adUnitDataRaw[x].bidSizes,
+                zoneId: adUnitDataRaw[x].zoneId,
+                sizeIds: adUnitDataRaw[x].sizeIds,
+                tagids: adUnitDataRaw[x].tagids,
+                aolPlacementId: adUnitDataRaw[x].aolPlacementId,
+                cfs: adUnitDataRaw[x].cfs,
+                cts: adUnitDataRaw[x].cts
+            });
+        }
+
+        var headerBidAdUnits = [];
+        var bids = [{"params": {"placementId": "9325806"}, "bidder": "appnexus"}, {"params": {"siteId": "45866", "accountId": "12270"}, "bidder": "rubicon"}, {"params": {"network": "10621.1"}, "bidder": "aol"}, {"params": {"cp": 560510}, "bidder": "pulsepoint"}, {"params": {}, "bidder": "sovrn"}];
+
+        for (var i = 0; i < adUnitData.length; i++) {
+
+            var currentBids = JSON.parse(JSON.stringify(bids));
+
+            var adjustedBids = createBid(adUnitData[i], currentBids);
+
+            headerBidAdUnits.push({
+                code: adUnitData[i].name,
+                sizes: adUnitData[i].sizes,
+                bids: adjustedBids
+            });
+        }
+
+        function createBid(adUnitData, currentBids) {
+            // Create extra ad units for bidders that require multiple bids for an ad slot
+            function generateAditionalBids(bidder, bidderProperty) {
+                if (adUnitData[bidderProperty] && adUnitData[bidderProperty].length > 1) {
+                    var index;
+                    for (var j = 0; j < currentBids.length; j++) {
+                        if (currentBids[j].bidder === bidder) {
+                            index = j;
+                        }
+                    }
+                    currentBids.push(JSON.parse(JSON.stringify(currentBids[index])));
+                };
+            }
+
+            generateAditionalBids('pulsepoint', 'cfs');
+            generateAditionalBids('sovrn', 'tagids');
+
+            var sovrnIndex = 0;
+            var pulsePointIndex = 0;
+
+            for (var j = 0; j < currentBids.length; j++) {
+                if (currentBids[j].bidder === 'rubicon') {
+                    currentBids[j].params.zoneId = adUnitData.zoneId;
+                    currentBids[j].params.sizes = adUnitData.sizeIds;
+                }
+                if (currentBids[j].bidder === 'aol') {
+                    currentBids[j].params.placement = adUnitData.aolPlacementId;
+                }
+                if (currentBids[j].bidder === 'sovrn') {
+                    currentBids[j].params.tagid = adUnitData.tagids[sovrnIndex];
+                    sovrnIndex++;
+                }
+                if (currentBids[j].bidder === 'pulsepoint') {
+                    currentBids[j].params.cf = adUnitData.cfs[pulsePointIndex];
+                    currentBids[j].params.ct = adUnitData.cts[pulsePointIndex];
+                    pulsePointIndex++;
+                }
+            }
+
+            return currentBids;
+        }
+
+        var adUnitNames = function() {
+            var names = [];
+            for (var i = 0; i < adUnitData.length; i++) {
+                names.push(adUnitData[i].name);
+            }
+            return names;
+        }();
+
+        napbjs.que.push(function() {
+
+            napbjs.addAdUnits(headerBidAdUnits);
+            napbjs.aliasBidder('appnexus', 'districtm');
+
+            napbjs.bidderSettings = {
+                standard: {
+                    adserverTargeting: [{
+                        key: 'hb_bidder',
+                        val: function(bidResponse) {
+                            return bidResponse.bidderCode;
+                        }
+                    }, {
+                        key: 'hb_adid',
+                        val: function(bidResponse) {
+                            return bidResponse.adId;
+                        }
+                    }, {
+                        key: 'hb_pb',
+                        val: function(bidResponse) {
+                            var cpm = bidResponse.cpm;
+                            if (cpm < 2.00) {
+                                return (Math.floor(cpm * 50) / 50).toFixed(2);
+                            } else if (cpm < 10.00) {
+                                return (Math.floor(cpm * 10) / 10).toFixed(2);
+                            } else if (cpm < 35.00) {
+                                return (Math.floor(cpm * 4) / 4).toFixed(2);
+                            } else {
+                                return '35.00';
+                            }
+                        }
+                    }]
+                },
+                // Adjust bids in real time before the auction takes place http://prebid.org/blog/adjust-bid-price
+                appnexus: {
+                    bidCpmAdjustment: function(bidCpm){
+                        return bidCpm * 0.9;
+                    }
+                },
+                rubicon: {
+                    bidCpmAdjustment: function(bidCpm){
+                        return bidCpm * 0.85;
+                    }
+                }
+            };
+
+            napbjs.requestBids({
+                adUnitCodes: adUnitNames,
+                bidsBackHandler: function(bidResponses) {
+                    initAdserver();
+                }
+            });
+        });
+
+        googletag.cmd.push(function() {
+            
+            // Define ads that do not require header bidding here
+var one_x_one = {"dfpSizes": [[1, 1]], "name": "1x1"};
+
+var gpt_pushdown = googletag.defineSlot('/1007667/' + pushdown.name, pushdown.dfpSizes, pushdown.name)
+.addService(googletag.pubads());
+adUnits.push(gpt_pushdown);
+
+
+var gpt_native = googletag.defineSlot('/1007667/' + native_dfp.name, native_dfp.dfpSizes, native_dfp.name)
+.addService(googletag.pubads());
+adUnits.push(gpt_native);
+
+
+var gpt_skyscraper_right = googletag.defineSlot('/1007667/Bicycles_Skyscraper_Right_160x600', skyscraper_right.dfpSizes, skyscraper_right.name)
+.addService(googletag.pubads());
+adUnits.push(gpt_skyscraper_right);
+
+var gpt_island_top_right = googletag.defineSlot('/1007667/Bicycles_IslandTop_Right_300x250', island_top_right.dfpSizes, island_top_right.name)
+.addService(googletag.pubads());
+adUnits.push(gpt_island_top_right);
+
+
+var gpt_sticky_btf = googletag.defineSlot('/1007667/' + sticky_btf.name, sticky_btf.dfpSizes, sticky_btf.name)
+.addService(googletag.pubads());
+adUnits.push(gpt_sticky_btf);
+
+
+var gpt_1x1 = googletag.defineSlot('/1007667/' + one_x_one.name, one_x_one.dfpSizes, one_x_one.name)
+.addService(googletag.pubads());
+
+
+
+
+googletag.pubads().setTargeting('s', 'bicycles');
+
+
+
+googletag.pubads().setTargeting('c', 'transport');
+
+
+
+googletag.pubads().setTargeting('author', '127');
+
+
+napbjs.que.push(function() {
+    napbjs.setTargetingForGPTAsync(adUnitNames);
+});
+
+googletag.pubads().setTargeting('pt', 'a');
+googletag.pubads().enableSingleRequest();
+googletag.pubads().collapseEmptyDivs();
+googletag.pubads().set('page_url','http://newatlas.com/bird-of-prey-bike/39930/');
+googletag.enableServices();
+
+            
+        });
+
+        // Expose the create bid function so that it can be accessed by dynamically created ad slots
+        return {
+            createBid: createBid
+        };
+    })();
+</script>
+
+  <script type="text/javascript" id="nsgpt" src="//cdn.nsstatic.net/ns/gizmag.com.js" async="async"></script>
+  
+
+    <script id="liftigniter-metadata" type="application/json">
+    {
+        "noShow" : "true",
+        "thumbnail": "http://img-3.newatlas.com/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C91%2C1079%2C607&w=300&s=2ef959bd2f9644eca0839b5344f374de",
+        "thumbnailRetina": "http://img-3.newatlas.com/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C91%2C1079%2C607&w=300&s=993e5f42c4bef384af7f3de0b16f87f2",
+        "thumbnailMobile": "http://img-3.newatlas.com/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&fit=max&h=253&q=60&rect=0%2C91%2C1079%2C607&w=450&s=58dbb33431e4008c47950adc85d0b8f8",
+        "thumbnailMobileRetina": "http://img-3.newatlas.com/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=253&q=40&rect=0%2C91%2C1079%2C607&w=450&s=2abd109e74906af0fcec7da2da949436",
+        "thumbnailMobilePreview": "http://img-3.newatlas.com/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&blur=500&fit=max&h=253&q=40&rect=0%2C91%2C1079%2C607&w=450&s=7032259afbc9c1a8a657d4dc2a3d3ff3",
+        "altText": "The Bird of Prey looking either cool or weird, depending on the observer"
+    }
+    </script>
+
+  <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '185498565121014');
+fbq('track', "PageView");</script>
+<noscript>
+    <img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=185498565121014&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+  <script>
+    window.newatlas = {props: {}};
+  </script>
+  <script>
+    window.newatlas.props['global-react-props'] = {"adSlots": [{"sizeIds": [15], "bidSizes": [[300, 250]], "tagids": ["382212"], "name": "Mobile_Gallery", "cts": [500127], "dfpSizes": [[300, 250], [300, 100], [320, 50]], "aolPlacementId": "4177039", "cfs": ["300X250"], "zoneId": "214634"}, {"sizeIds": [15, 2], "bidSizes": [[300, 250], [728, 90]], "tagids": ["382212", "382211"], "name": "Gallery", "cts": [500127, 500130], "dfpSizes": [[300, 250], [728, 90], [970, 250]], "aolPlacementId": "4177039", "cfs": ["300X250", "728X90"], "zoneId": "214634"}, {"sizeIds": [15], "bidSizes": [[300, 250]], "tagids": ["382212"], "name": "Mobile_Article", "cts": [500127], "dfpSizes": [[300, 250], [300, 100], [320, 50]], "aolPlacementId": "4177039", "cfs": ["300X250"], "zoneId": "214634"}, {"dfpSizes": [[300, 250], [300, 100], [320, 50]], "bidSizes": [], "sizeIds": [], "name": "Desktop_Article", "zoneId": ""}], "loginApiEndpoint": "https:\/\/secure.newatlas.com\/rest-auth\/login\/", "isMobile": false, "siteName": "New Atlas", "logoutApiEndpoint": "https:\/\/secure.newatlas.com\/rest-auth\/logout\/", "resetPasswordUrl": "https:\/\/secure.newatlas.com\/password-reset\/", "searchUrl": "http:\/\/newatlas.com\/search\/", "galleryImage": null, "environment": "production", "siteLabel": "newatlas", "userLoggedIn": false, "registerUrl": "https:\/\/secure.newatlas.com\/register\/", "updateUserUrl": "https:\/\/secure.newatlas.com\/update_user\/", "rssUrl": "http:\/\/newatlas.com\/xml\/", "gptBaseUrl": "\/1007667\/", "facebookLoginUrl": "https:\/\/secure.newatlas.com\/login\/facebook\/?next=%2Fbird-of-prey-bike%2F39930%2F", "adBids": [{"params": {"placementId": "9325806"}, "bidder": "appnexus"}, {"params": {"siteId": "45866", "accountId": "12270"}, "bidder": "rubicon"}, {"params": {"network": "10621.1"}, "bidder": "aol"}, {"params": {"cp": 560510}, "bidder": "pulsepoint"}, {"params": {}, "bidder": "sovrn"}]};
+</script>
+
+
+
+</head>
+<body class="newatlas">
+
+  <!-- Google analytics tracking script -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2235360-4']);
+    
+    _gaq.push(['_setCustomVar', 1, 'Category', 'Bicycles', 3 ]);
+    
+    _gaq.push(['_setCustomVar', 2, 'Writer', 'Ben Coxworth', 3 ]);
+    
+    _gaq.push(['_setCustomVar', 3, 'View', 'Article', 3 ]);
+    
+    _gaq.push(['_setCustomVar', 5, 'ArticleID', '39930', 3 ]);
+    
+    _gaq.push(['_setCustomVar', 4, 'PPV_test3', '1', 3 ]);
+    
+    
+    _gaq.push(['_trackPageview']);
+    
+    _gaq.push(['_trackPageLoadTime']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+    })();
+</script>
+
+  <div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=38456013908";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+  <script>
+    window.newatlas.props['desktop-header'] = {"siteName": "New Atlas", "siteLabel": "newatlas", "cache_key": "header", "displayHeroArticle": false, "initialData": [{"id": 2, "name": "Lifestyle", "slug": "lifestyle", "categories": [{"id": 191, "name": "Architecture", "slug": "architecture"}, {"id": 17, "name": "Around The Home", "slug": "aroundthehome"}, {"id": 218, "name": "Children", "slug": "children"}, {"id": 227, "name": "Collectibles", "slug": "collectibles"}, {"id": 23, "name": "Good Thinking", "slug": "goodthinking"}, {"id": 24, "name": "Health & Wellbeing", "slug": "health"}, {"id": 25, "name": "Holiday Destinations", "slug": "destinations"}, {"id": 33, "name": "Outdoors", "slug": "outdoors"}, {"id": 35, "name": "Pets", "slug": "pets"}, {"id": 27, "name": "Remarkable People", "slug": "remarkablepeople"}, {"id": 117, "name": "Sports", "slug": "sports"}, {"id": 228, "name": "Tiny Houses", "slug": "tiny-houses"}]}, {"id": 4, "name": "Science", "slug": "science", "categories": [{"id": 230, "name": "Biology", "slug": "biology"}, {"id": 21, "name": "Electronics", "slug": "electronics"}, {"id": 231, "name": "Energy", "slug": "energy"}, {"id": 20, "name": "Environment", "slug": "environment"}, {"id": 232, "name": "Materials", "slug": "materials"}, {"id": 214, "name": "Medical", "slug": "medical"}, {"id": 233, "name": "Physics", "slug": "physics"}, {"id": 234, "name": "Quantum Computing", "slug": "quantum-computing"}, {"id": 213, "name": "Space", "slug": "space"}]}, {"id": 3, "name": "Technology", "slug": "technology", "categories": [{"id": 224, "name": "3D Printing", "slug": "3d-printing"}, {"id": 34, "name": "Computers", "slug": "computers"}, {"id": 235, "name": "Deals", "slug": "deals"}, {"id": 18, "name": "Digital Cameras", "slug": "digital-cameras"}, {"id": 225, "name": "Drones", "slug": "drones"}, {"id": 22, "name": "Games", "slug": "games"}, {"id": 26, "name": "Home Entertainment", "slug": "homeentertainment"}, {"id": 147, "name": "Laptops", "slug": "laptops"}, {"id": 93, "name": "Military", "slug": "military"}, {"id": 29, "name": "Mobile Technology", "slug": "mobiletechnology"}, {"id": 116, "name": "Music", "slug": "music"}, {"id": 94, "name": "Robotics", "slug": "robotics"}, {"id": 226, "name": "Smartwatches", "slug": "smartwatches"}, {"id": 40, "name": "Telecommunications", "slug": "telecommunications"}, {"id": 229, "name": "VR", "slug": "virtual-reality"}, {"id": 95, "name": "Wearables", "slug": "wearableelectronics"}]}, {"id": 1, "name": "Transport", "slug": "transport", "categories": [{"id": 16, "name": "Aircraft", "slug": "aircraft"}, {"id": 14, "name": "Automotive", "slug": "automotive"}, {"id": 217, "name": "Bicycles", "slug": "bicycles"}, {"id": 32, "name": "Marine", "slug": "marine"}, {"id": 30, "name": "Motorcycles", "slug": "motorcycles"}, {"id": 41, "name": "Urban Transport", "slug": "urbantransport"}]}]};
+</script>
+<div id="desktop-header"><header class="header" data-reactroot="" data-reactid="1" data-react-checksum="1925015566"><div class="header__main" data-reactid="2"><div class="container" data-reactid="3"><div class="header__logo" data-reactid="4"><div class="header__logo-inner" data-reactid="5"><a href="/" title="Home" class="header__logo-image" data-reactid="6"><h1 data-reactid="7">New Atlas</h1></a></div></div><nav class="header__menu" data-reactid="8"><ul data-reactid="9"><li class="header__link--lifestyle" data-reactid="10"><a href="javascript:void(0);" class=" " data-tracking="header-menu" data-reactid="11">Lifestyle</a></li><li class="header__link--science" data-reactid="12"><a href="javascript:void(0);" class=" " data-tracking="header-menu" data-reactid="13">Science</a></li><li class="header__link--technology" data-reactid="14"><a href="javascript:void(0);" class=" " data-tracking="header-menu" data-reactid="15">Technology</a></li><li class="header__link--transport" data-reactid="16"><a href="javascript:void(0);" class=" " data-tracking="header-menu" data-reactid="17">Transport</a></li><li class="header__link--features" data-reactid="18"><a href="javascript:void(0);" class=" " data-tracking="header-menu" data-reactid="19">Features</a></li><li class="header__link--reviews" data-reactid="20"><a href="javascript:void(0);" class=" " data-tracking="header-menu" data-reactid="21">Reviews</a></li><li class="header__link--search" data-reactid="22"><a href="javascript:void(0);" class=" " data-tracking="header-menu" data-reactid="23">Search</a></li><li class="header__login" data-reactid="24"></li><li class="header__link--subscribe" data-reactid="25"><a href="javascript:void(0);" class=" button" data-tracking="header-menu" data-reactid="26">Subscribe</a></li></ul></nav></div></div><div class="header__dropdown" style="top:-208px;" data-reactid="27"></div></header></div>
+
+
+  
+
+  
+
+  
+
+<div class="ad ad--pushdown">
+    <div class="ad-inner" id="pushdown">
+        <script type="text/javascript">
+            googletag.cmd.push(function() {
+                googletag.display("pushdown");
+            });
+            
+        </script>
+    </div>
+</div>
+
+
+
+
+  <div class="container container--main js-container-main">
+
+    <section class="column--span2 column--multi js-article-list">
+
+    
+
+    <article>
+
+        <script>
+    window.newatlas.props['article'] = {"initialDataArticle": {"title": "Bird of Prey bike takes a new position on cycling", "summary": "<p>When it comes to bicycles with different types of seating positions, everyone is familiar with uprights and recumbents. There is, however, a lesser-known third option \u2013 prone. While these have formerly been limited to one-off bikes aimed at speed record attempts, Bird of Prey Bicycles is now offering a semi-prone aimed at everyday users. It may look a little quirky, but it's claimed to have several advantages over other bikes.<\/p>", "category": "Bicycles", "category_slug": "bicycles", "published_at": "2015-10-19T23:01:00.789222Z", "created_by": "Ben Coxworth", "created_by_url": "http:\/\/newatlas.com\/author\/ben-coxworth\/", "created_by_image": "http:\/\/gizmag-avatars.imgix.net\/127.jpg?auto=format%2Ccompress&dpr=2&fit=max&h=40&q=60&w=40&s=6428874a9fb134f232ba6589180f9d92", "display_ads": true, "label_link": null, "label_text": null, "relative_url": "http:\/\/newatlas.com\/bird-of-prey-bike\/39930\/", "body_elements": [{"object": "<p>When it comes to bicycles with different types of seating positions, everyone is familiar with uprights and recumbents. There is, however, a lesser-known third option \u2013 prone. While these have formerly been limited to one-off bikes aimed at speed record attempts, Bird of Prey Bicycles is now offering a semi-prone aimed at everyday users. It may look a little quirky, but it's claimed to have several advantages over other bikes.<\/p>", "type": "html", "word_count": 70}, {"object": "<p>California-based architect John Aldridge designed the original Bird of Prey back in 1991. Bike-builder Russ Denny proceeded to give it physical form in 2010, and it was first publicly shown last year. This September, advertising for the production model officially began.<\/p>", "type": "html", "word_count": 41}, {"object": "<p>As can be seen, the rider lies front-down but looking up and ahead. Leather pads support their hips, elbows and hands, while their legs stick straight out the back \u2013 as if they were swimming, or flying, or both. This reportedly makes the bike and rider very aerodynamic, while also keeping the center of gravity low, allowing for quick and agile handling.<\/p>", "type": "html", "word_count": 62}, {"object": "<p>Due to the Bird of Prey's ergonomic layout, riders are reportedly easily able to turn its big 60-tooth rear chainring (linked to a 36\/11 cassette), producing more torque than would be possible than with a smaller ring. They're also able to spin like crazy when climbing hills, with their legs fully extended.<\/p>", "type": "html", "word_count": 52}, {"object": {"id": 370289, "url": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=700&q=60&w=616&s=d2cca836a50776e7bc23e8603c8f097f", "url_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=700&q=40&w=616&s=735aa72266628a63813a94fa2a0b49ea", "url_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=700&q=40&w=616&s=909304c6d3ef0efd787f6b9fb39c532f", "url_mobile": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=450&q=60&w=450&s=d54875ef1dbc08d50a7b92d38e959808", "url_mobile_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=450&q=40&w=450&s=f8aba0982dc29dc52039db594caa022f", "url_mobile_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=450&q=40&w=450&s=4cc1aacad5c793bcce216f3f63f83bbb", "url_hero": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&fit=crop&h=347&q=60&w=616&s=42b87c44297193724df3df2bb29373fb", "url_hero_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&dpr=2&fit=crop&h=347&q=40&w=616&s=2a4a6e7d0fa6693ae9a9b47fa2dc35e7", "url_hero_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&ch=Width&crop=entropy&fit=crop&h=347&q=40&w=616&s=77d6cb0db6e3e153761dec643b3c2b3f", "url_hero_mobile": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&fit=crop&h=253&q=60&w=450&s=62c7b052f1eceda226e5ab0c7d865d54", "url_hero_mobile_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&dpr=2&fit=crop&h=253&q=40&w=450&s=dc24693036ecb6deb0604e3aaa0ad6da", "url_hero_mobile_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&ch=Width&crop=entropy&fit=crop&h=253&q=40&w=450&s=af584a1006b32b673fc12dec0c4f04a3", "url_article_tn": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&fit=crop&h=200&q=60&w=200&s=716efc9ab82c0a0f6a4df5a5bb55e01b", "url_article_tn_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&fit=crop&h=200&q=40&w=200&s=7a3c278b1bd4bf14e5bfa56ceeb73b41", "url_article_tn_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&dpr=2&fit=crop&h=200&q=40&w=200&s=5a07f5b10dc016db0d321635b3b4f534", "url_gallery": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&fit=max&h=670&q=60&w=1000&s=9f01200b2fa20e3231f6b1b01de50264", "url_gallery_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&fit=max&h=670&q=40&w=1000&s=5280e9a6704bf934ec9e23df9b4ff173", "url_gallery_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=670&q=40&w=1000&s=d4bff46fe4a5a95a6440e82691474d97", "get_gallery_url": "#p370289", "alt": "Leather pads support the rider's hips, elbows and hands, while their legs stick straight out the...", "title": "Leather pads support the rider's hips, elbows and hands, while their legs stick straight out the back", "caption": "Leather pads support the rider's hips, elbows and hands, while their legs stick straight out the back", "credit": "Bird of Prey Bicycles", "srcset_sizes": "(min-width: 320px) 100vw", "position": 4, "meta": {"width": 883, "height": 720, "size": 75790}}, "type": "image", "features": []}, {"object": "\n", "type": "html", "word_count": 1}, {"object": "<p>Despite appearances, it's additionally said to be safe. \"On a standard bicycle if you put on the brakes in a panic stop you will fly over the handle bars face first,\" Aldrige tells us. \"In a panic stop on a Bird of Prey Bicycle it is impossible to go over the handle bars ... The rider's body mass is low, which is the reason it is impossible.\"<\/p>", "type": "html", "word_count": 67}, {"object": "<p>That said, it looks like visibility \u2013 both seeing and being seen by other traffic \u2013 could be a bit of a challenge.<\/p>", "type": "html", "word_count": 23}, {"object": "<p>No much in the way of specs are currently available, other than that the bike has an aluminum frame ... and a price tag of US$8,500. If you're interested, John and his team are accepting orders now.<\/p>", "type": "html", "word_count": 37}, {"object": "<p>For yet another variation on placing-the-person-on-the-bike, check out the rider-dangling <a href=\"http:\/\/newatlas.com\/flying-rider-production\/33777\/\" target=\"_blank\">Flying Rider<\/a>.<\/p>", "type": "html", "word_count": 12}, {"object": "<p>Source: <a href=\"http:\/\/birdofpreybicycles.ning.com\/\" target=\"_blank\">Bird of Prey Bicycles<\/a> via <a href=\"http:\/\/www.contemporist.com\/2015\/10\/13\/you-ride-this-bike-lying-down-and-it-feels-like-youre-flying\/\" target=\"_blank\">Contemporist<\/a><\/p>", "type": "html", "word_count": 7}], "image_count": 4, "hero": {"id": 370288, "url": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=700&q=60&w=616&s=c13131cde5980a2580f5a63cca369b9d", "url_preview": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=700&q=40&w=616&s=66a95f663c77ff376158ba0bccc7e521", "url_retina": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=700&q=40&w=616&s=e209b2f7fc0cfb40a03aa5b6d89dd460", "url_mobile": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=450&q=60&w=450&s=7c90022c86826c19b89ac1449baf3e54", "url_mobile_retina": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=450&q=40&w=450&s=d4a8a8170c36136f42eda202a3ceae8f", "url_mobile_preview": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=450&q=40&w=450&s=8f232206e83e33399ca04fed33f6d9bf", "url_hero": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=crop&h=347&q=60&rect=0%2C91%2C1079%2C607&w=616&s=e3a2c0e43790ccf98aaa29689b0e0274", "url_hero_retina": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=347&q=40&rect=0%2C91%2C1079%2C607&w=616&s=18e8fc70078cfa481d48e66b71fc6a62", "url_hero_preview": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=crop&h=347&q=40&rect=0%2C91%2C1079%2C607&w=616&s=ca041ee127d0ca564bdf732921cd52e5", "url_hero_mobile": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=crop&h=253&q=60&rect=0%2C91%2C1079%2C607&w=450&s=c7901e43f8283933bac42256c831c07c", "url_hero_mobile_retina": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=253&q=40&rect=0%2C91%2C1079%2C607&w=450&s=f0bae1fbf1d8404cf766724a78969f04", "url_hero_mobile_preview": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=crop&h=253&q=40&rect=0%2C91%2C1079%2C607&w=450&s=0e00c269f29efe97e2fc142a2e3a680e", "url_article_tn": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&fit=crop&h=200&q=60&w=200&s=291aa876d1f8ab47b092814ed53e8cb7", "url_article_tn_preview": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&blur=500&fit=crop&h=200&q=40&w=200&s=87c92f9894c3b046d9e9ee369a682c95", "url_article_tn_retina": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&dpr=2&fit=crop&h=200&q=40&w=200&s=3701246aae2f8ee9db6797534f7c298b", "url_gallery": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&fit=max&h=670&q=60&w=1000&s=0ae15c2a3130c7816ea78f671106f889", "url_gallery_preview": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&blur=500&fit=max&h=670&q=40&w=1000&s=a4ec0728002ae498e85ac4c315e63c8f", "url_gallery_retina": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=670&q=40&w=1000&s=a5d2c0608e0da45bc1a9bd2181a65e85", "get_gallery_url": "#p370288", "alt": "The Bird of Prey looking either cool or weird, depending on the observer", "title": "The Bird of Prey looking either cool or weird, depending on the observer", "caption": "The Bird of Prey looking either cool or weird, depending on the observer", "credit": "Bird of Prey Bicycles", "srcset_sizes": "(min-width: 320px) 100vw", "position": 3, "meta": {"width": 1079, "size": 121687, "height": 720}}, "thumbnail_images": [{"id": 370286, "url": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=700&q=60&w=616&s=3cf0c0a34147f722ef699365869bf4c6", "url_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=700&q=40&w=616&s=c2660d8a8a403ddfd0ed0bf0d57e2d80", "url_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=700&q=40&w=616&s=4d55b851d7ecb9c792c01f718a9f8610", "url_mobile": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=450&q=60&w=450&s=586a038088c714776cfd723a5fa8f4cd", "url_mobile_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=450&q=40&w=450&s=343f3a995c5128ccb7d7ce3c98b995f8", "url_mobile_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=450&q=40&w=450&s=8e16373ec3707a57efa45d07af3added", "url_hero": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&fit=crop&h=347&q=60&w=616&s=1afe32a6994ae0caa460ed8e7082286d", "url_hero_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&dpr=2&fit=crop&h=347&q=40&w=616&s=d11963610b5f86107cc4762d6fba6380", "url_hero_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&blur=500&ch=Width&crop=entropy&fit=crop&h=347&q=40&w=616&s=35fc48d17bd17aadb5db015d03d541c0", "url_hero_mobile": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&fit=crop&h=253&q=60&w=450&s=7a75701eeb89149852f83ffd14c07faa", "url_hero_mobile_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&dpr=2&fit=crop&h=253&q=40&w=450&s=04141d4f1c301e49ee9f6f5edca96eb6", "url_hero_mobile_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&blur=500&ch=Width&crop=entropy&fit=crop&h=253&q=40&w=450&s=f6bfe98566c1392c67c3edbff3cc2b11", "url_article_tn": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&fit=crop&h=200&q=60&w=200&s=a744bfc4275b94cfee7ee63767fac585", "url_article_tn_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&blur=500&fit=crop&h=200&q=40&w=200&s=8a53b315ba00bc2d659cb631e689c6ff", "url_article_tn_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&dpr=2&fit=crop&h=200&q=40&w=200&s=c48337f849b6fcc613f5d2245a07e72b", "url_gallery": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&fit=max&h=670&q=60&w=1000&s=62b809eeeac0e52bb4a186c5d3eb5ca0", "url_gallery_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&blur=500&fit=max&h=670&q=40&w=1000&s=996fb8e1897b1d3b0c361e3ff46a785e", "url_gallery_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=670&q=40&w=1000&s=e4c02f9de39885eb2fb635866b5e64e6", "get_gallery_url": "#p370286", "alt": "Due to the Bird of Prey's ergonomic layout, riders are reportedly easily able to turn its...", "title": "Due to the Bird of Prey's ergonomic layout, riders are reportedly easily able to turn its big 60-tooth rear chainring (linked to a 36\/11 cassette), producing more torque than would be possible than with a smaller ring", "caption": "Due to the Bird of Prey's ergonomic layout, riders are reportedly easily able to turn its big 60-tooth rear chainring (linked to a 36\/11 cassette), producing more torque than would be possible than with a smaller ring", "credit": "Bird of Prey Bicycles", "srcset_sizes": "(min-width: 320px) 100vw", "position": 1, "meta": {"width": 1079, "size": 99174, "height": 720}}, {"id": 370287, "url": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=700&q=60&w=616&s=4c49e24ea8b6d10c568a436090871d1f", "url_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=700&q=40&w=616&s=2d0dba7e214e20401078d49c947cdca7", "url_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=700&q=40&w=616&s=a11453a3116b3002ce735daf3ef4787b", "url_mobile": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=450&q=60&w=450&s=ab961b0102249755fef9ed637c191d59", "url_mobile_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=450&q=40&w=450&s=77f13eab135f8c96c85f8cf9a0b5c614", "url_mobile_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=450&q=40&w=450&s=21408a5ce66ab1541c9fd7b842d71625", "url_hero": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&fit=crop&h=347&q=60&w=616&s=688dd6b2c3a3ab42035a2dd7d75ef132", "url_hero_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&dpr=2&fit=crop&h=347&q=40&w=616&s=7823c12b0a93ba54f09f84c00b310158", "url_hero_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&blur=500&ch=Width&crop=entropy&fit=crop&h=347&q=40&w=616&s=06d21862c85c9f4b4b49c7f2499fd07d", "url_hero_mobile": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&fit=crop&h=253&q=60&w=450&s=63e8613c50cdd058676f04ef75562079", "url_hero_mobile_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&dpr=2&fit=crop&h=253&q=40&w=450&s=ad1470aea41cc9b07c857ca82174ff6b", "url_hero_mobile_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&blur=500&ch=Width&crop=entropy&fit=crop&h=253&q=40&w=450&s=5768ad5463b79e5e6a9bb7b68ae965c3", "url_article_tn": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&fit=crop&h=200&q=60&w=200&s=d3cbd3d256a61635fb56eb510bafe79c", "url_article_tn_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&blur=500&fit=crop&h=200&q=40&w=200&s=5d9555c11251695ba22cf68b3a6ebfab", "url_article_tn_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&dpr=2&fit=crop&h=200&q=40&w=200&s=62d96c171e40372d55e92320e79045a7", "url_gallery": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&fit=max&h=670&q=60&w=1000&s=619026653ad879540df144bce1481721", "url_gallery_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&blur=500&fit=max&h=670&q=40&w=1000&s=fda393ba1a1022837a7666c520f2b941", "url_gallery_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=670&q=40&w=1000&s=40a4de7fc21ba29fc20b6344e7554da7", "get_gallery_url": "#p370287", "alt": "No much in the way of specs are currently available, other than that the Bird of...", "title": "No much in the way of specs are currently available, other than that the Bird of Prey has an aluminum frame ... and a price tag of $8,500", "caption": "No much in the way of specs are currently available, other than that the Bird of Prey has an aluminum frame ... and a price tag of $8,500", "credit": "Bird of Prey Bicycles", "srcset_sizes": "(min-width: 320px) 100vw", "position": 2, "meta": {"width": 1440, "height": 1080, "size": 446971}}, {"id": 370289, "url": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=700&q=60&w=616&s=d2cca836a50776e7bc23e8603c8f097f", "url_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=700&q=40&w=616&s=735aa72266628a63813a94fa2a0b49ea", "url_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=700&q=40&w=616&s=909304c6d3ef0efd787f6b9fb39c532f", "url_mobile": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=450&q=60&w=450&s=d54875ef1dbc08d50a7b92d38e959808", "url_mobile_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=450&q=40&w=450&s=f8aba0982dc29dc52039db594caa022f", "url_mobile_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=450&q=40&w=450&s=4cc1aacad5c793bcce216f3f63f83bbb", "url_hero": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&fit=crop&h=347&q=60&w=616&s=42b87c44297193724df3df2bb29373fb", "url_hero_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&dpr=2&fit=crop&h=347&q=40&w=616&s=2a4a6e7d0fa6693ae9a9b47fa2dc35e7", "url_hero_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&ch=Width&crop=entropy&fit=crop&h=347&q=40&w=616&s=77d6cb0db6e3e153761dec643b3c2b3f", "url_hero_mobile": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&fit=crop&h=253&q=60&w=450&s=62c7b052f1eceda226e5ab0c7d865d54", "url_hero_mobile_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&dpr=2&fit=crop&h=253&q=40&w=450&s=dc24693036ecb6deb0604e3aaa0ad6da", "url_hero_mobile_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&ch=Width&crop=entropy&fit=crop&h=253&q=40&w=450&s=af584a1006b32b673fc12dec0c4f04a3", "url_article_tn": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&fit=crop&h=200&q=60&w=200&s=716efc9ab82c0a0f6a4df5a5bb55e01b", "url_article_tn_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&fit=crop&h=200&q=40&w=200&s=7a3c278b1bd4bf14e5bfa56ceeb73b41", "url_article_tn_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&dpr=2&fit=crop&h=200&q=40&w=200&s=5a07f5b10dc016db0d321635b3b4f534", "url_gallery": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&fit=max&h=670&q=60&w=1000&s=9f01200b2fa20e3231f6b1b01de50264", "url_gallery_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&fit=max&h=670&q=40&w=1000&s=5280e9a6704bf934ec9e23df9b4ff173", "url_gallery_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=670&q=40&w=1000&s=d4bff46fe4a5a95a6440e82691474d97", "get_gallery_url": "#p370289", "alt": "Leather pads support the rider's hips, elbows and hands, while their legs stick straight out the...", "title": "Leather pads support the rider's hips, elbows and hands, while their legs stick straight out the back", "caption": "Leather pads support the rider's hips, elbows and hands, while their legs stick straight out the back", "credit": "Bird of Prey Bicycles", "srcset_sizes": "(min-width: 320px) 100vw", "position": 4, "meta": {"width": 883, "height": 720, "size": 75790}}], "get_gallery_url": "#gallery", "native_ad": null}, "placeGalleryAdAfterEveryXSubsequentImages": 1, "isAmp": false, "articleId": 39930, "gptBaseUrl": "\/1007667\/", "galleryAdSlotSizes": [[300, 250], [728, 90], [970, 250]], "initialDataGallery": {"count": 4, "next": null, "previous": null, "results": [{"id": 370286, "url": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=700&q=60&w=616&s=3cf0c0a34147f722ef699365869bf4c6", "url_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=700&q=40&w=616&s=c2660d8a8a403ddfd0ed0bf0d57e2d80", "url_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=700&q=40&w=616&s=4d55b851d7ecb9c792c01f718a9f8610", "url_mobile": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=450&q=60&w=450&s=586a038088c714776cfd723a5fa8f4cd", "url_mobile_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=450&q=40&w=450&s=343f3a995c5128ccb7d7ce3c98b995f8", "url_mobile_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=450&q=40&w=450&s=8e16373ec3707a57efa45d07af3added", "url_hero": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&fit=crop&h=347&q=60&w=616&s=1afe32a6994ae0caa460ed8e7082286d", "url_hero_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&dpr=2&fit=crop&h=347&q=40&w=616&s=d11963610b5f86107cc4762d6fba6380", "url_hero_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&blur=500&ch=Width&crop=entropy&fit=crop&h=347&q=40&w=616&s=35fc48d17bd17aadb5db015d03d541c0", "url_hero_mobile": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&fit=crop&h=253&q=60&w=450&s=7a75701eeb89149852f83ffd14c07faa", "url_hero_mobile_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&dpr=2&fit=crop&h=253&q=40&w=450&s=04141d4f1c301e49ee9f6f5edca96eb6", "url_hero_mobile_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&blur=500&ch=Width&crop=entropy&fit=crop&h=253&q=40&w=450&s=f6bfe98566c1392c67c3edbff3cc2b11", "url_article_tn": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&fit=crop&h=200&q=60&w=200&s=a744bfc4275b94cfee7ee63767fac585", "url_article_tn_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&blur=500&fit=crop&h=200&q=40&w=200&s=8a53b315ba00bc2d659cb631e689c6ff", "url_article_tn_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&dpr=2&fit=crop&h=200&q=40&w=200&s=c48337f849b6fcc613f5d2245a07e72b", "url_gallery": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&fit=max&h=670&q=60&w=1000&s=62b809eeeac0e52bb4a186c5d3eb5ca0", "url_gallery_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&blur=500&fit=max&h=670&q=40&w=1000&s=996fb8e1897b1d3b0c361e3ff46a785e", "url_gallery_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=670&q=40&w=1000&s=e4c02f9de39885eb2fb635866b5e64e6", "get_gallery_url": "#p370286", "alt": "Due to the Bird of Prey's ergonomic layout, riders are reportedly easily able to turn its...", "title": "Due to the Bird of Prey's ergonomic layout, riders are reportedly easily able to turn its big 60-tooth rear chainring (linked to a 36\/11 cassette), producing more torque than would be possible than with a smaller ring", "caption": "Due to the Bird of Prey's ergonomic layout, riders are reportedly easily able to turn its big 60-tooth rear chainring (linked to a 36\/11 cassette), producing more torque than would be possible than with a smaller ring", "credit": "Bird of Prey Bicycles", "srcset_sizes": "(min-width: 320px) 100vw", "position": 1, "meta": {"width": 1079, "size": 99174, "height": 720}}, {"id": 370287, "url": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=700&q=60&w=616&s=4c49e24ea8b6d10c568a436090871d1f", "url_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=700&q=40&w=616&s=2d0dba7e214e20401078d49c947cdca7", "url_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=700&q=40&w=616&s=a11453a3116b3002ce735daf3ef4787b", "url_mobile": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=450&q=60&w=450&s=ab961b0102249755fef9ed637c191d59", "url_mobile_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=450&q=40&w=450&s=77f13eab135f8c96c85f8cf9a0b5c614", "url_mobile_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=450&q=40&w=450&s=21408a5ce66ab1541c9fd7b842d71625", "url_hero": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&fit=crop&h=347&q=60&w=616&s=688dd6b2c3a3ab42035a2dd7d75ef132", "url_hero_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&dpr=2&fit=crop&h=347&q=40&w=616&s=7823c12b0a93ba54f09f84c00b310158", "url_hero_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&blur=500&ch=Width&crop=entropy&fit=crop&h=347&q=40&w=616&s=06d21862c85c9f4b4b49c7f2499fd07d", "url_hero_mobile": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&fit=crop&h=253&q=60&w=450&s=63e8613c50cdd058676f04ef75562079", "url_hero_mobile_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&dpr=2&fit=crop&h=253&q=40&w=450&s=ad1470aea41cc9b07c857ca82174ff6b", "url_hero_mobile_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&blur=500&ch=Width&crop=entropy&fit=crop&h=253&q=40&w=450&s=5768ad5463b79e5e6a9bb7b68ae965c3", "url_article_tn": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&fit=crop&h=200&q=60&w=200&s=d3cbd3d256a61635fb56eb510bafe79c", "url_article_tn_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&blur=500&fit=crop&h=200&q=40&w=200&s=5d9555c11251695ba22cf68b3a6ebfab", "url_article_tn_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&dpr=2&fit=crop&h=200&q=40&w=200&s=62d96c171e40372d55e92320e79045a7", "url_gallery": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&fit=max&h=670&q=60&w=1000&s=619026653ad879540df144bce1481721", "url_gallery_preview": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&blur=500&fit=max&h=670&q=40&w=1000&s=fda393ba1a1022837a7666c520f2b941", "url_gallery_retina": "http:\/\/img-2.newatlas.com\/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=670&q=40&w=1000&s=40a4de7fc21ba29fc20b6344e7554da7", "get_gallery_url": "#p370287", "alt": "No much in the way of specs are currently available, other than that the Bird of...", "title": "No much in the way of specs are currently available, other than that the Bird of Prey has an aluminum frame ... and a price tag of $8,500", "caption": "No much in the way of specs are currently available, other than that the Bird of Prey has an aluminum frame ... and a price tag of $8,500", "credit": "Bird of Prey Bicycles", "srcset_sizes": "(min-width: 320px) 100vw", "position": 2, "meta": {"width": 1440, "height": 1080, "size": 446971}}, {"id": 370288, "url": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=700&q=60&w=616&s=c13131cde5980a2580f5a63cca369b9d", "url_preview": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=700&q=40&w=616&s=66a95f663c77ff376158ba0bccc7e521", "url_retina": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=700&q=40&w=616&s=e209b2f7fc0cfb40a03aa5b6d89dd460", "url_mobile": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=450&q=60&w=450&s=7c90022c86826c19b89ac1449baf3e54", "url_mobile_retina": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=450&q=40&w=450&s=d4a8a8170c36136f42eda202a3ceae8f", "url_mobile_preview": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=450&q=40&w=450&s=8f232206e83e33399ca04fed33f6d9bf", "url_hero": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=crop&h=347&q=60&rect=0%2C91%2C1079%2C607&w=616&s=e3a2c0e43790ccf98aaa29689b0e0274", "url_hero_retina": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=347&q=40&rect=0%2C91%2C1079%2C607&w=616&s=18e8fc70078cfa481d48e66b71fc6a62", "url_hero_preview": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=crop&h=347&q=40&rect=0%2C91%2C1079%2C607&w=616&s=ca041ee127d0ca564bdf732921cd52e5", "url_hero_mobile": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=crop&h=253&q=60&rect=0%2C91%2C1079%2C607&w=450&s=c7901e43f8283933bac42256c831c07c", "url_hero_mobile_retina": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=253&q=40&rect=0%2C91%2C1079%2C607&w=450&s=f0bae1fbf1d8404cf766724a78969f04", "url_hero_mobile_preview": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=crop&h=253&q=40&rect=0%2C91%2C1079%2C607&w=450&s=0e00c269f29efe97e2fc142a2e3a680e", "url_article_tn": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&fit=crop&h=200&q=60&w=200&s=291aa876d1f8ab47b092814ed53e8cb7", "url_article_tn_preview": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&blur=500&fit=crop&h=200&q=40&w=200&s=87c92f9894c3b046d9e9ee369a682c95", "url_article_tn_retina": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&dpr=2&fit=crop&h=200&q=40&w=200&s=3701246aae2f8ee9db6797534f7c298b", "url_gallery": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&fit=max&h=670&q=60&w=1000&s=0ae15c2a3130c7816ea78f671106f889", "url_gallery_preview": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&blur=500&fit=max&h=670&q=40&w=1000&s=a4ec0728002ae498e85ac4c315e63c8f", "url_gallery_retina": "http:\/\/img-3.newatlas.com\/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=670&q=40&w=1000&s=a5d2c0608e0da45bc1a9bd2181a65e85", "get_gallery_url": "#p370288", "alt": "The Bird of Prey looking either cool or weird, depending on the observer", "title": "The Bird of Prey looking either cool or weird, depending on the observer", "caption": "The Bird of Prey looking either cool or weird, depending on the observer", "credit": "Bird of Prey Bicycles", "srcset_sizes": "(min-width: 320px) 100vw", "position": 3, "meta": {"width": 1079, "size": 121687, "height": 720}}, {"id": 370289, "url": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=700&q=60&w=616&s=d2cca836a50776e7bc23e8603c8f097f", "url_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=700&q=40&w=616&s=735aa72266628a63813a94fa2a0b49ea", "url_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=700&q=40&w=616&s=909304c6d3ef0efd787f6b9fb39c532f", "url_mobile": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&h=450&q=60&w=450&s=d54875ef1dbc08d50a7b92d38e959808", "url_mobile_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&dpr=2&fit=clip&h=450&q=40&w=450&s=f8aba0982dc29dc52039db594caa022f", "url_mobile_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&ch=Width&fit=max&h=450&q=40&w=450&s=4cc1aacad5c793bcce216f3f63f83bbb", "url_hero": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&fit=crop&h=347&q=60&w=616&s=42b87c44297193724df3df2bb29373fb", "url_hero_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&dpr=2&fit=crop&h=347&q=40&w=616&s=2a4a6e7d0fa6693ae9a9b47fa2dc35e7", "url_hero_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&ch=Width&crop=entropy&fit=crop&h=347&q=40&w=616&s=77d6cb0db6e3e153761dec643b3c2b3f", "url_hero_mobile": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&fit=crop&h=253&q=60&w=450&s=62c7b052f1eceda226e5ab0c7d865d54", "url_hero_mobile_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=entropy&dpr=2&fit=crop&h=253&q=40&w=450&s=dc24693036ecb6deb0604e3aaa0ad6da", "url_hero_mobile_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&ch=Width&crop=entropy&fit=crop&h=253&q=40&w=450&s=af584a1006b32b673fc12dec0c4f04a3", "url_article_tn": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&fit=crop&h=200&q=60&w=200&s=716efc9ab82c0a0f6a4df5a5bb55e01b", "url_article_tn_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&fit=crop&h=200&q=40&w=200&s=7a3c278b1bd4bf14e5bfa56ceeb73b41", "url_article_tn_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&dpr=2&fit=crop&h=200&q=40&w=200&s=5a07f5b10dc016db0d321635b3b4f534", "url_gallery": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&fit=max&h=670&q=60&w=1000&s=9f01200b2fa20e3231f6b1b01de50264", "url_gallery_preview": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&blur=500&fit=max&h=670&q=40&w=1000&s=5280e9a6704bf934ec9e23df9b4ff173", "url_gallery_retina": "http:\/\/img-1.newatlas.com\/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=670&q=40&w=1000&s=d4bff46fe4a5a95a6440e82691474d97", "get_gallery_url": "#p370289", "alt": "Leather pads support the rider's hips, elbows and hands, while their legs stick straight out the...", "title": "Leather pads support the rider's hips, elbows and hands, while their legs stick straight out the back", "caption": "Leather pads support the rider's hips, elbows and hands, while their legs stick straight out the back", "credit": "Bird of Prey Bicycles", "srcset_sizes": "(min-width: 320px) 100vw", "position": 4, "meta": {"width": 883, "height": 720, "size": 75790}}]}, "placeGalleryAdAfterFirstXImages": 0, "articleAdSlotSizes": [[300, 250], [300, 100], [320, 50]], "articleAdSlotName": "Desktop_Article", "cache_key": "article-39930", "galleryAdSlotName": "Gallery", "isMobile": false};
+</script>
+<div id="article"><div data-reactroot="" data-reactid="1" data-react-checksum="-1113392063"><div class="article-detail" data-reactid="2"><div class="label-group" data-reactid="3"><a class="label" href="/bicycles/" data-reactid="4">Bicycles</a></div><h1 class="article-detail__title" data-reactid="5">Bird of Prey bike takes a new position on cycling</h1><div class="article-detail__byline" data-reactid="6"><a href="http://newatlas.com/author/ben-coxworth/" rel="author" class="article-detail__byline-image" data-reactid="7"><img src="http://gizmag-avatars.imgix.net/127.jpg?auto=format%2Ccompress&amp;dpr=2&amp;fit=max&amp;h=40&amp;q=60&amp;w=40&amp;s=6428874a9fb134f232ba6589180f9d92" alt="Ben Coxworth" data-reactid="8"/></a><p data-reactid="9"><a href="http://newatlas.com/author/ben-coxworth/" rel="author" data-reactid="10">Ben Coxworth</a></p><span class="separator" data-reactid="11"></span><span data-reactid="12">October 20th, 2015</span></div><figure class="inline-item" itemtype="http://schema.org/ImageObject" data-reactid="13"><p class="inline-item__picture-count" data-reactid="14"><a href="javascript:void(0)" data-tracking="gallery-picture_count_article" title="View gallery" data-reactid="15"><!-- react-text: 16 -->4<!-- /react-text --><!-- react-text: 17 --> pictures<!-- /react-text --></a></p><a href="javascript:void(0)" data-tracking="gallery-hero_image" title="View gallery" data-reactid="18"><div class="image" data-reactid="19"><div class="image__inner" data-reactid="20"></div></div></a><figcaption class="caption caption--inline" itemprop="caption" data-reactid="21"><p data-reactid="22"><span data-reactid="23">The Bird of Prey looking either cool or weird, depending on the observer</span><span class="caption__credit" data-reactid="24"><!-- react-text: 25 -->(Credit: <!-- /react-text --><span data-reactid="26">Bird of Prey Bicycles</span><!-- react-text: 27 -->)<!-- /react-text --></span></p></figcaption><a href="javascript:void(0)" class="button article-detail__gallery-button-top" title="View gallery" data-tracking="gallery-article_top_top" data-reactid="28"><!-- react-text: 29 -->View gallery - <!-- /react-text --><!-- react-text: 30 -->4<!-- /react-text --><!-- react-text: 31 --> images<!-- /react-text --></a></figure></div><div class="article-detail__body" data-reactid="32"><div data-reactid="33"><p>When it comes to bicycles with different types of seating positions, everyone is familiar with uprights and recumbents. There is, however, a lesser-known third option – prone. While these have formerly been limited to one-off bikes aimed at speed record attempts, Bird of Prey Bicycles is now offering a semi-prone aimed at everyday users. It may look a little quirky, but it's claimed to have several advantages over other bikes.</p></div><div data-reactid="34"><p>California-based architect John Aldridge designed the original Bird of Prey back in 1991. Bike-builder Russ Denny proceeded to give it physical form in 2010, and it was first publicly shown last year. This September, advertising for the production model officially began.</p></div><div data-reactid="35"><p>As can be seen, the rider lies front-down but looking up and ahead. Leather pads support their hips, elbows and hands, while their legs stick straight out the back – as if they were swimming, or flying, or both. This reportedly makes the bike and rider very aerodynamic, while also keeping the center of gravity low, allowing for quick and agile handling.</p></div><div data-reactid="36"><p>Due to the Bird of Prey's ergonomic layout, riders are reportedly easily able to turn its big 60-tooth rear chainring (linked to a 36/11 cassette), producing more torque than would be possible than with a smaller ring. They're also able to spin like crazy when climbing hills, with their legs fully extended.</p></div><div class="inline-item" data-reactid="37"><a href="javascript:void(0)" data-reactid="38"><div class="image" data-reactid="39"><div class="image__inner" data-reactid="40"></div></div></a></div><div data-reactid="41">
+</div><div data-reactid="42"><p>Despite appearances, it's additionally said to be safe. "On a standard bicycle if you put on the brakes in a panic stop you will fly over the handle bars face first," Aldrige tells us. "In a panic stop on a Bird of Prey Bicycle it is impossible to go over the handle bars ... The rider's body mass is low, which is the reason it is impossible."</p></div><div data-reactid="43"><p>That said, it looks like visibility – both seeing and being seen by other traffic – could be a bit of a challenge.</p></div><div data-reactid="44"><p>No much in the way of specs are currently available, other than that the bike has an aluminum frame ... and a price tag of US$8,500. If you're interested, John and his team are accepting orders now.</p></div><div data-reactid="45"><p>For yet another variation on placing-the-person-on-the-bike, check out the rider-dangling <a href="http://newatlas.com/flying-rider-production/33777/" target="_blank">Flying Rider</a>.</p></div><div data-reactid="46"><p>Source: <a href="http://birdofpreybicycles.ning.com/" target="_blank">Bird of Prey Bicycles</a> via <a href="http://www.contemporist.com/2015/10/13/you-ride-this-bike-lying-down-and-it-feels-like-youre-flying/" target="_blank">Contemporist</a></p></div><a href="javascript:void(0)" class="button article-detail__gallery-button-bottom" title="View gallery" data-tracking="gallery-article_top_bottom" data-reactid="47"><!-- react-text: 48 -->View gallery - <!-- /react-text --><!-- react-text: 49 -->4<!-- /react-text --><!-- react-text: 50 --> images<!-- /react-text --></a></div><span data-reactid="51"><div class="gallery" data-reactid="52"><div class="gallery-header" data-reactid="53"><a href="/" class="gallery-header__logo" data-reactid="54"><span class="visually-hidden" data-reactid="55"></span></a><a href="javascript:void(0);" class="gallery-header__title" data-reactid="56">Bird of Prey bike takes a new position on cycling</a><div class="gallery-header__column column--gallery" data-reactid="57"><p class="gallery-header__count" data-reactid="58"><!-- react-text: 59 -->1<!-- /react-text --><!-- react-text: 60 --> / <!-- /react-text --><!-- react-text: 61 -->4<!-- /react-text --></p></div><a href="javascript:void(0);" class="gallery-header__close" data-reactid="62"></a></div><div class="gallery__scroll-panel" data-reactid="63"></div></div></span></div></div>
+
+
+        <noscript>
+    <!-- Display gallery images for Googlebot and users who don't have js -->
+    
+    
+        <img src="http://img-2.newatlas.com/bird-of-prey-bike-1.jpg?auto=format%2Ccompress&fit=max&h=670&q=60&w=1000&s=62b809eeeac0e52bb4a186c5d3eb5ca0">
+    
+        <img src="http://img-2.newatlas.com/bird-of-prey-bike-2.jpg?auto=format%2Ccompress&fit=max&h=670&q=60&w=1000&s=619026653ad879540df144bce1481721">
+    
+        <img src="http://img-3.newatlas.com/bird-of-prey-bike-3.jpg?auto=format%2Ccompress&fit=max&h=670&q=60&w=1000&s=0ae15c2a3130c7816ea78f671106f889">
+    
+        <img src="http://img-1.newatlas.com/bird-of-prey-bike-4.jpg?auto=format%2Ccompress&fit=max&h=670&q=60&w=1000&s=9f01200b2fa20e3231f6b1b01de50264">
+    
+    
+</noscript>
+
+
+        <script>
+    (function(){
+        var showGallery = (window.location.hash === '#gallery' ||
+                           window.location.hash.indexOf('#p') === 0);
+        if (showGallery) {
+            if (document.getElementsByClassName('gallery').length !== 0) {
+                document.getElementsByClassName('gallery')[0].className += ' gallery--is-open';
+                document.getElementsByTagName('html')[0].className += ' lock-page-scroll';
+            }
+        }
+    })();
+</script>
+
+
+        
+
+    <!-- Tags -->
+    <div class="article-tags">
+        <h2 class="article-tags__title">Tags</h2>
+        <ul>
+            
+                <li class="article-tags__tag"><a href="http://newatlas.com/tag/cycling/" rel="tag">#Cycling</a></li>
+            
+                <li class="article-tags__tag"><a href="http://newatlas.com/tag/ergonomic/" rel="tag">#Ergonomic</a></li>
+            
+        </ul>
+    </div>
+
+
+
+
+        <div class="social-bar">
+    <h2>Share this article</h2>
+    <ul>
+        <li>
+            
+            <a href="javascript:typeof(FB) !== 'undefined' ? FB.ui({method: 'share',href: 'http://newatlas.com/bird-of-prey-bike/39930/'}, function(response){}) : window.open('http://www.facebook.com/sharer.php?u=http://newatlas.com/bird-of-prey-bike/39930/');" target="_blank" title="Share on Facebook" data-tracking="share-facebook_article">
+            
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" ><path fill="#222222" d="M0,0h40v40H0V0z"/><path fill="#FFFFFF" d="M25.6,15.8h-3.8v-2.5c0-0.9,0.6-1.2,1.1-1.2h2.7V8l-3.7,0c-4.1,0-5,3.1-5,5v2.7h-2.4V20h2.4v12h5V20h3.4L25.6,15.8"/></svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/intent/tweet?text=Bird%20of%20Prey%20bike%20takes%20a%20new%20position%20on%20cycling&url=http://newatlas.com/bird-of-prey-bike/39930/&via=nwtls" target="_blank" title="Tweet on Twitter" data-tracking="share-twitter_article">
+                <svg version="1.1" width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path fill="#222222" d="M0,0h40v40H0V0z"/><path fill="#FFFFFF" d="M30.7,12.5c-0.8,0.4-1.7,0.6-2.6,0.8c0.9-0.6,1.7-1.5,2-2.7c-0.9,0.6-1.8,1-2.9,1.2c-0.8-0.9-2-1.5-3.3-1.5c-2.5,0-4.5,2.2-4.5,4.9c0,0.4,0,0.8,0.1,1.1c-3.7-0.2-7.1-2.1-9.3-5.1c-0.4,0.7-0.6,1.5-0.6,2.4c0,1.7,0.8,3.2,2,4c-0.7,0-1.4-0.2-2-0.6v0.1c0,2.3,1.6,4.3,3.6,4.8c-0.4,0.1-0.8,0.2-1.2,0.2c-0.3,0-0.6,0-0.8-0.1c0.6,1.9,2.2,3.3,4.2,3.4c-1.5,1.3-3.5,2.1-5.6,2.1c-0.4,0-0.7,0-1.1-0.1c2,1.4,4.4,2.2,6.9,2.2c8.3,0,12.8-7.4,12.8-13.8c0-0.2,0-0.4,0-0.6C29.4,14.4,30.1,13.5,30.7,12.5"/></svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://newatlas.com/bird-of-prey-bike/39930/&title=Bird%20of%20Prey%20bike%20takes%20a%20new%20position%20on%20cycling&summary=&source=" target="_blank" title="Share on Linkedin" data-tracking="share-linkedin_article">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40"><rect fill="#222222" width="40" height="40"/><g><path id="LinkedIn" fill="#F1F2F2" d="M32.6,22.7V32h-5.4v-8.7c0-2.2-0.8-3.7-2.7-3.7c-1.5,0-2.4,1-2.8,2c-0.1,0.3-0.2,0.8-0.2,1.3v9h-5.4c0,0,0.1-14.7,0-16.2h5.4v2.3c0,0,0,0,0,0.1h0v-0.1c0.7-1.1,2-2.7,4.9-2.7C29.9,15.4,32.6,17.7,32.6,22.7zM10.5,8c-1.8,0-3,1.2-3,2.8c0,1.6,1.2,2.8,3,2.8h0c1.9,0,3-1.2,3-2.8C13.5,9.2,12.3,8,10.5,8zM7.8,32h5.4V15.8H7.8V32z"/></g></svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://plus.google.com/share?url=http://newatlas.com/bird-of-prey-bike/39930/" title="Share on Google+" target="_blank" data-tracking="share-google_plus_article">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40"><rect fill="#222222" width="40" height="40"/><g><path id="Shape" fill="#F1F2F2" d="M14.5,18.6v3.3H20c-0.2,1.4-1.6,4.1-5.4,4.1c-3.3,0-5.9-2.7-5.9-6s2.7-6,5.9-6c1.9,0,3.1,0.8,3.8,1.5l2.6-2.5c-1.7-1.6-3.8-2.5-6.4-2.5C9.3,10.5,5,14.7,5,20s4.3,9.5,9.5,9.5c5.5,0,9.2-3.9,9.2-9.3c0-0.6-0.1-1.1-0.1-1.6H14.5L14.5,18.6z"/><path id="Shape_1_" fill="#F1F2F2" d="M35,18.6h-2.7v-2.7h-2.7v2.7h-2.7v2.7h2.7v2.7h2.7v-2.7H35"/></g></svg>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.stumbleupon.com/submit?url=http://newatlas.com/bird-of-prey-bike/39930/&title=Bird%20of%20Prey%20bike%20takes%20a%20new%20position%20on%20cycling" title="Share on StumbleUpon" target="_blank" data-tracking="share-stumbleupon_article">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><rect fill="#222222" width="40" height="40"/><path fill="#FFFFFF" d="M3.792,24.968v-4.344h5.376v4.296c0,0.448,0.16,0.836,0.48,1.164c0.32,0.328,0.712,0.492,1.176,0.492	c0.464,0,0.86-0.16,1.188-0.48s0.492-0.712,0.492-1.176V14.768c0-1.872,0.692-3.468,2.076-4.788S17.608,8,19.512,8c1.904,0,3.548,0.664,4.932,1.992s2.076,2.936,2.076,4.824v2.208l-3.216,0.96l-2.136-1.008v-1.92c0-0.464-0.16-0.856-0.48-1.176s-0.712-0.48-1.176-0.48c-0.464,0-0.86,0.16-1.188,0.48c-0.328,0.32-0.492,0.712-0.492,1.176v10.008c0,1.92-0.688,3.556-2.064,4.908S12.744,32,10.824,32c-1.936,0-3.592-0.684-4.968-2.052S3.792,26.92,3.792,24.968zM21.168,25.04v-4.392l2.136,1.008l3.216-0.96v4.416c0,0.464,0.16,0.86,0.48,1.188c0.32,0.328,0.712,0.492,1.176,0.492s0.856-0.164,1.176-0.492c0.32-0.328,0.48-0.724,0.48-1.188v-4.488h5.376v4.344c0,1.936-0.684,3.592-2.052,4.968C31.788,31.312,30.136,32,28.2,32s-3.592-0.68-4.968-2.04	C21.856,28.6,21.168,26.96,21.168,25.04z"/></svg>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.reddit.com/submit?url=http://newatlas.com/bird-of-prey-bike/39930/&title=Bird%20of%20Prey%20bike%20takes%20a%20new%20position%20on%20cycling" title="Post on Reddit" target="_blank" data-tracking="share-reddit_article">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><rect x="0.1084595" fill="#222222" width="40" height="40"/><circle id="circle21800" fill="#FFFFFF" stroke="#ffffff" stroke-width="1.1" cx="8.4105577" cy="19.6176567" r="2.8342655"></circle><circle id="circle21802" fill="#FFFFFF" stroke="#ffffff" stroke-width="1.1" cx="31.5944805" cy="19.6176567" r="2.8342655"></circle><path id="path21804" fill="none" stroke="#ffffff" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" d="M27.8602085,9.669405c0,0,0,0-5.6685314-1.3342657l-2.0832157,6.5853148"/><circle id="circle21808" fill="#FFFFFF" stroke="#ffffff" stroke-width="1.1" cx="30.1731472" cy="10.1277962" r="2.2342658"></circle><path id="path21820" d="M7.103562400000001,23.5155582a12.8370657,8.3779716 0 1,0 25.6741314,0a12.8370657,8.3779716 0 1,0 -25.6741314,0" fill="#FFFFFF" stroke="#222222" stroke-width="1.1"></path><g id="g21824"><path id="circle21826" fill="#222222" d="M15.4938231,19.7904053c-1.1402187,0-2.0967646,0.9565449-2.0967646,2.0967636s0.9565458,2.0655079,2.0967646,2.0655079s2.0655088-0.9252892,2.0655088-2.0655079S16.6340408,19.7904053,15.4938231,19.7904053z"/><path id="circle21828" fill="#222222" d="M24.542469,19.7904053 c-1.1407986,0-2.099369,0.955965-2.099369,2.0967636s0.9585705,2.0655079,2.099369,2.0655079	c1.1408005,0,2.0655079-0.9247093,2.0655079-2.0655079S25.6832695,19.7904053,24.542469,19.7904053z"/><path id="path21830"  fill="none" stroke="#222222" stroke-width="1.1" stroke-linecap="round" d="		M15.5675535,27.3725529c1.1181803,1.1181812,2.9223757,1.3332157,4.4181833,1.3332157"/><path id="path21832" fill="none" stroke="#222222" stroke-width="1.1" stroke-linecap="round" d="		M24.4374809,27.3725529c-1.1192284,1.1181812-2.9223766,1.3332157-4.4192276,1.3332157"/></g></svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://share.flipboard.com/bookmarklet/popout?v=2&title=Bird%20of%20Prey%20bike%20takes%20a%20new%20position%20on%20cycling&url=http://newatlas.com/bird-of-prey-bike/39930/" class="social-bar__flipboard" title="Add this page to a flipboard magazine" target="_blank" data-tracking="share-flipboard_article">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="24" height="24"><rect x="20" y="20" width="20" height="20" fill="#cccccc" /><polygon points="40 20 40 40 20 40 20 60 40 60 60 60 60 20 40 20" fill="#000000"/><rect x="20" y="0" width="40" height="21" fill="#e6e6e6" /><rect width="21" height="60" fill="#ffffff"/></svg>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+        <!-- Comments -->
+        
+
+            <script>
+    window.newatlas.props['comments'] = {"cache_key": "comments-39930", "articleId": 39930, "initialData": [{"created_by": "T N Args", "created": "2015-10-20T02:17:18.751220Z", "text": "As a long term recumbent rider, I can assure you that visibility (conspicuity) is NEVER a challenge. That's a common mistake made by outsiders.\r\n\r\nHowever, with this model, rider vision does look challenged. The body is so prone that the neck angle looks bad like a racer on the drops, leading to neck strain and 90% of the rider's view being road surface instead of traffic and obstacles.\r\n\r\nFinally, safety may be a bit better than a racer as stated in the article, but if the rider actually hits something, I would much rather fly into it feet first on a recumbent than head first on a racer or prone bike.\r\n\r\nMy main interest is in how and where the seat supports the rider. Looks interesting, and potentially comfortable. Or not (!)"}, {"created_by": "Sir_Likwid_Lundchen", "created": "2015-10-20T02:40:59.654890Z", "text": "The UCI would lay an egg if they saw this. "}, {"created_by": "Timelord", "created": "2015-10-20T02:58:15.369446Z", "text": "Okay, this is just plain silly. The geometry on this guarantees you won't be able to generate as much power as on a regular bicycle. The hip angle is just way too open to involve the powerful gluteals. John Aldridge should stick to architecture. Bringing Russ Denny's name into this doesn't help. He's well-known as a very mercenary torch. Give him money and Russ will build anything for you, regardless of how inefficient the design is.\n\nAldridge's website\/blog is just painful to read. Ridiculous claims aside, grammatical and spelling errors abound. Among other things, he claims this \"allows you to keep your head up and see the road in front.\" Nonsense. You'd have to hyperextend your neck just like on a road bike and still look forward and downward. \"What is more comfortable than lying down?\" Supine on a recumbent seat that distributes the pressure over a large seat, backrest and maybe even headrest. People have actually slept in their recumbent trikes at rest stops. Try that with a \"comfortable\" Bird of Prey.\n\nI feel sorry for anyone suckered into paying $8500 for one of these."}, {"created_by": "Gizzyfuel", "created": "2015-10-20T04:54:58.234799Z", "text": "This is far the worst design for a bike for one its like as soon as you crash you gonna go head first and then smear your whole face into the ground.  Why do we even need to reinvent the bicycle.  "}, {"created_by": "flibb", "created": "2015-10-20T05:19:48.421402Z", "text": "Bloody ridiculous and that was before I read the asking price!"}, {"created_by": "Grunt", "created": "2015-10-20T10:13:22.643117Z", "text": "Not convinced by this design of bicycle at all and the rider has to pull their head back uncomfortably just to see where they are going. This just smacks of desperation to do something differently."}, {"created_by": "ElronHubbard", "created": "2015-10-20T15:01:39.001986Z", "text": "this is ridiculous.  laying on your front side is TERRIBLE for your spine.  you are just asking for back problems if you were to ride this way regularly.  just stupid how \"inventors\" are continually trying to better things that work so well already.  at least recumbent bikes have a physiological reasoning behind them.  this is the opposite and just stupid."}, {"created_by": "Bruce H. Anderson", "created": "2015-10-20T15:31:06.416951Z", "text": "This might work well if it was faired and taken to Battle Mountain.  Oh....wait."}, {"created_by": "Dennis Zogbi", "created": "2015-10-20T15:37:56.225326Z", "text": "That's a bicycle built by a committee. "}, {"created_by": "kezersoze", "created": "2015-10-20T15:40:04.586402Z", "text": "The design is interesting, but I foresee problems climbing hills. I don't think you can generate sufficient power while going up steep hills. I think it would work OK, not great, on the flats, but not for use in hilly terrains. "}, {"created_by": "TomJames", "created": "2015-10-20T15:51:43.847126Z", "text": "I've always wondered how this position would be to ride, and at $8,500 I'll have to keep on wondering.  "}, {"created_by": "Mexoplex 5 Million", "created": "2015-10-20T15:56:20.061289Z", "text": "ahhhhhhh relax. you weren't going to by it anyway. it would have to be a sub $1k price for it to be interesting. \n\nJust enjoy the model on the bike and move along."}, {"created_by": "Bradley Green", "created": "2015-10-20T15:56:53.228507Z", "text": "Doubt it will catch on.\n\"Seat\" support would have to be forward of hip flexors.\nThere no way to unweight the \"seat\" when going over road irregularities.\nDoes look good for transmitting power to the crank.\nAnd\nthe view from behind should be good, depending on who's riding it.\n "}, {"created_by": "glorybe2", "created": "2015-10-20T16:04:51.101706Z", "text": "   First your neck will hate you and every bump will be felt in the gut. But worse yet is the fact that one of the few protections one has on a bicycle is being seen by drivers. And with this rig you will have less vision in traffic and traffic will have less vision of you. The price tag reflects the builder's knowledge that this product will actually need a limited exposure to the public. That is simply because anyone who becomes aware of this thing's qualities will never buy it and by limiting the number of buyers word will not get around until a few are sold. "}, {"created_by": "KirkJerold", "created": "2015-10-20T16:13:23.648750Z", "text": "I give the average rider 5 miles before their elbows are sore as hell from supporting their torso weight.And by then your pelvic bones, back, shoulders, and neck should be complaining too. .... "}, {"created_by": "KirkJerold", "created": "2015-10-20T16:18:01.715617Z", "text": "Can't be healthy pumping that crank with your stomach in the saddle. Best case scenario - sudden onset bathroom emergencies. "}, {"created_by": "ddavel544", "created": "2015-10-20T16:23:37.708547Z", "text": "No, I just don't see this \"bike\" taking flight. Not gonna happen, no matter how many pretty models you use.  "}, {"created_by": "dugnology", "created": "2015-10-20T16:24:43.320630Z", "text": "I would like to try it.  Compared to a English racer, your neck angle looks lower.  Yeah, the $8,500 is a deal killer, but it doesn't look too hard to make yourself.  It would be really cool if it was streamlined.\n "}, {"created_by": "Holden_Caufield", "created": "2015-10-20T17:06:29.780167Z", "text": "Okay, power delivery considerations aside, notice the article makes no mention of neck comfort or lack there of. You would be miserable inside of an hour. And it would handle like shit. It was designed by an architect, not an engineer, enough said. "}, {"created_by": "richardwpb", "created": "2015-10-20T17:06:32.219192Z", "text": "Try shifting your weight to avoid an accident on this bike designed rig....Impossible. Designed for idiots with more money than brains!"}, {"created_by": "Madlyb", "created": "2015-10-20T17:07:42.102325Z", "text": "The only thing this will exercise is your neck...trying to hold your head up for the entire ride."}, {"created_by": "Kuniva", "created": "2015-10-20T17:29:51.152904Z", "text": "Well she's going to slow down traffic. I couldn't see myself overtaking her in a hurry. "}, {"created_by": "ezeflyer", "created": "2015-10-20T17:46:56.008848Z", "text": "I like it.  It would be nice to watch those butts on the road."}, {"created_by": "mhpr262", "created": "2015-10-20T17:56:53.425996Z", "text": "The bike may make sense or not, I'd still follow her gladly ..."}, {"created_by": "Nik", "created": "2015-10-20T18:17:38.173335Z", "text": "I can foresee a few people losing their front teeth with this design.\n\nHit a bump or pothole, and the arms or neck may not be capable of reacting fast enough, or with enough power to prevent contact between face and handlebars."}, {"created_by": "George W. Groovy", "created": "2015-10-20T18:25:58.061902Z", "text": "This looks promising but they will have to bring the price down to at least $8,000, before I'd be tempted. "}, {"created_by": "Bobbafet", "created": "2015-10-20T18:34:39.409997Z", "text": "As much as I love my feet and legs, I would much rather have them at the front and not my face. Smacking face first into something is a good way to be disfigured, paralyzed or killed IMO. That and the price is nothing short of ridiculous. "}, {"created_by": "spacecoast", "created": "2015-10-20T18:36:28.113691Z", "text": "Was this designed for hemorrhoid sufferers? "}, {"created_by": "wle", "created": "2015-10-20T19:00:49.601028Z", "text": "yeah\ncheck back in 3 years and see if they sold any of these things!\n\nridiculous\n\ni wouldn;t pay $100 for a bike like that\nof course they want $8500\n\nwle\n"}, {"created_by": "birdofpreybicycle", "created": "2015-10-20T19:41:44.888987Z", "text": "Thanks for all the comments. Go to birdofprey.com and watch the blogs for answers to all the questions. There is one issue I would like to bring to a rest. Today I'm going to post videos of the Bird of Prey Bicycle stopping. It will show how fast the bike can stop and how safe it really is. Please don't try to duplicate what you see on the video with a standard bicycle because you will definitely go over the handle bars and land on your head. Imagine all the injuries and lives that would be saved if no one went over the handle bars. Those of you that have a recumbent bike know that you won't go over the handlebars on your bicycle. In a panic stop you just stop. Think about the physics and the rider's center of mass as related to the front wheel. The Bird of Prey has more hours of ridding time than any other prone or semi-prone bike. Five years to be exact. No one has ever come close or even worried about going over the handlebars. There have been no accidents on a Bird of Prey Bicycle. Someone did fall over at a complete stop because they didn't clip out of the pedals but they weren't hurt. It's not a long fall."}, {"created_by": "banerjek", "created": "2015-10-20T19:43:58.593172Z", "text": "So the bike exists, but we have no specs or even a picture of someone riding it (even on the company website)? Who the heck wears running shoes with eggbeater pedals? For that matter, who the heck puts eggbeaters on a $8500 bike that's supposedly a performance rig?\n\nI'm totally interested in taking one of these for a spin. But I'm skeptical on a number of fronts. Aside from obvious issues with being on the bike very long, I'm trying to imagine how the handling wouldn't be hopeless -- and I say this as a 'bent rider used to some pretty crazy geometry."}, {"created_by": "crawfish", "created": "2015-10-20T19:59:46.577216Z", "text": "For some, it may be a bit impractical. However, for those of us who love the visual delight of seeing a nice Big-Butt Woman riding a Bicycle alongside in her Tights during our daily commute, this design is just Perfect. Go - Bird of Prey !"}, {"created_by": "sk8dad", "created": "2015-10-20T21:00:24.603676Z", "text": "This would earn all sorts of legitimacy if one were to only ride at Burning Man or the Folsom Street Faire.  It would make a nice mating pair with the Fitz Bike."}, {"created_by": "PaulBeauchamp", "created": "2015-10-20T21:13:59.351995Z", "text": "why not add a pad that you lay your head down on, like a massage table, looking into a monitor that has images from a front mounted camera to guide you. yes its a dumb idea but then so is this bike"}, {"created_by": "windykites", "created": "2015-10-20T21:56:08.595185Z", "text": "I just noticed: If it rains, you are going to end up with brown trousers!There is no mud-guard."}, {"created_by": "Marco Corona", "created": "2015-10-20T21:59:09.716805Z", "text": "My physical therapist, orthopedic physician, chiropractor, and deep tissue massage therapist look forward to seeing this bicycle becoming the norm."}, {"created_by": "pwndecaf", "created": "2015-10-20T22:10:40.060040Z", "text": "What is the reason for asking $8500?  Looking for a niche?  LOL"}, {"created_by": "fenriq", "created": "2015-10-20T22:18:17.925881Z", "text": "The only upside I can see to this kind of bike is that it makes nice buttocks more appreciable. Other than that, nope, this is a silly design exercise."}, {"created_by": "MoonPie", "created": "2015-10-21T01:49:00.904649Z", "text": "OK, I'm a long time biker both road and mountain. I try not to be negative when someone tries to re invent the bike. \nNot even going to discuss the price. It's a newly developed design with projected low sales so I get the high price.\nI think most have covered the deficiencies, of which their are a number. All bike designs are lacking in at least a few ways to be honest.\nThe issues I would have with this bike are:\n1. Neck angle. No way around this one. This is more severe than even a road bike set up for racing. Add the fact that on a road bike you have the option to sit up for relief, not so here. 10 miles and most will quit.\n2. The saddle. While somewhat unknown to me, it would have to hold you above your hip flexors and below your gut. Does it do this? Again add that you can't sit up or adjust your position at all on this bike. I move around a lot on my bikes. No way to do so here.\n3. The legs extended should not add but reduce power by loading the quads more and reducing the gluts input. Further how do you sprint on this thing - answer is you don't. Riding out of the saddle on a super steep climb? No way. No way to add power by using your weight on the pedals etc. The aero position would add speed though.\n4. There is a lot of weight on your elbows and arms. While a rider may get used to this, it definitely will reduce your handling ability greatly.\n5. With this locked in position no unweighting, no leaning to correct a bad line, no bunny hops to avoid pot holes etc. Wow you hit a hole and you are going to hurt bad and the roads better be real smooth too.\n6. Locked in head forward position. In a crash it's head 1st, no way to bail. \n7. Heck drinking and eating on this thing would be difficult too.\n\nThe good thing is it's more aero than a standard bike. But most everything I love about riding would be removed for me on this bike. I like to ride out of the saddle, to hop obstacles, sit up when I want, ride no hands at times, unweight to smooth out the ride... All this and more lacking in this bike. \n"}, {"created_by": "Intellcity", "created": "2015-10-21T03:12:17.220951Z", "text": "This design form has been around since the early 20TH century.  None have been good to ride. Even with a now available prism vision so you don't have to twist your head up your body doesn't like to be suspended as is needed.\n\nThis design has been used for HPV record attempts with over 53 MPH achieved.\n\nMaybe someone who spent $8500 might be willing to ride it enough to get in shape well enough to put up with it.\n  \nBut probably not."}, {"created_by": "birdofpreybicycle", "created": "2015-10-21T03:19:22.138758Z", "text": "I have had more fun looking at gizmag. What a great Magazine. The articles are great."}, {"created_by": "birdofpreybicycle", "created": "2015-10-21T03:25:11.724406Z", "text": "Don't feed the trolls but that is all the fun. Trolls are observant otherwise they wouldn't exist. I love them ..... but they are wrong. Sorry. You will not land face first."}, {"created_by": "birdofpreybicycle", "created": "2015-10-21T04:01:43.368143Z", "text": "Thanks for all the comments! Go to birdofpreybicycle.com and watch the blogs for answers to all the questions. There is one issue I would like to bring to a rest. Today I'm going to post videos of the Bird of Prey Bicycle stopping. It will show how fast the bike can stop and how safe it really is. Please don't try to duplicate what you see on the video with a standard bicycle because you will definitely go over the handle bars and land on your head! Imagine all the injuries and lives that would be saved if no one went over the handle bars. Those of you that have a recumbent bike know that you won't go over the handlebars on your bicycle. In a panic stop you just stop. Think about the physics and the rider's center of mass as related to the front wheel. The Bird of Prey has more hours of riding time than any other prone or semi-prone bike. Five years to be exact. No one has ever come close or even worried about going over the handlebars. There have been no accidents on a Bird of Prey Bicycle. Contact: birdofpreybicycle@gmail.com "}, {"created_by": "BryanRogers", "created": "2015-10-21T06:18:43.494157Z", "text": "VIDEO HERE-\nhttps:\/\/www.facebook.com\/bryan50rogers\/videos\/10153771638594170\/?l=6314483872011923795\n\nI saw this bike being ridden earlier this year (right near where the promo photos were taken in Carlsbad). You can see the actual riding position. It was tough to even watch him ride it. It really was all over the place and looked extremely challenging to keep straight. I passed him and waited ahead to shoot more video but I remember seeing the struggle as he approached and decided to be kind and not shoot directly at him. It felt like watching an elderly person falling down. You wouldn't want to be the guy who's standing there watching someone suffer. My opinion in the commentary at the end still stands."}, {"created_by": "Conny S\u00f6re", "created": "2015-10-21T08:24:38.503335Z", "text": "I sure would like to try one. I can imagine the feeling being somewhat like flying very low but I also can imagine some of the painful stress some muscles would have to take in long runs or in the bones when there is a bump in the road. \n\nThe website states it would be \"Fastest bicycle for racing & triathlons\" but I understand recumbents aren't allowed in races and that being due to the low drag being a to big advantage and the odd design making it easy to disallow them by setting up rules how a bike should \"look\". If theese forward-laying bikes would be allowed in races I'm sure they will be a big hit in long road races, not because they would be more comfortable or easier to ride but because the lower drag making the bike go faster with the same amount of work. I'm afraid the people making the rules will find a way to disallow theese as well. \n\nAnd also. About all the male chauvinistic comments I'm sure there will be some happy ladies riding behind a man with a nice butt in his tights and surely also 'a few' gay men."}, {"created_by": "banerjek", "created": "2015-10-21T16:53:58.430846Z", "text": "I guess I may be missing the point. Don't get me wrong -- I like riding interesting things. I would totally give this a shot and have ridden weirder looking contraptions. It is more aerodynamic than a road bike and you can't go over the handlebars. However, the same could be said for almost any recumbent, and there are a number of recumbents that are more aerodynamic than the Bird of Prey that don't suffer from issues people have already brought up with the Bird. BTW, even on road bikes, going over the handlebars is caused by improper setup and technique rather than by issues inherent to race bikes.\n\nOne thing that would really help is more video of people riding this thing. I found a few videos on the company home page, their website, and some private sites. However, I have yet to see the rider going fast or displaying anything that remotely looks like secure handling in any of them. The closest I could find was some squirrely and not particularly fast downhill action at https:\/\/www.facebook.com\/BirdOfPreyBicycle\/videos\/1033732773312329\/ and a bit of cruising (again looking unstable) at https:\/\/www.facebook.com\/BirdOfPreyBicycle\/videos\/785023828183226\/ \n\nI would  be afraid to take this in traffic, and I say that as someone who owns bikes that are lower than this, rides on 2 lane highways with no shoulders in any weather, and even takes interstates. Aside from the handling issues everyone in the videos seem to experience, I don't see a good way to get your hands off the bars to signal, grab water, etc. Also, I'm really unclear on what kind of emergency options you'd have. For example, what if one of the cars the cyclist was riding past suddenly pulled out or he hit a rock\/hole on the descent? These things are common occurrences. \n\nWhat I would recommend that the designer do is to take the Bird of Prey out on a century, preferably one with a lot of climbing, speed, and turns. There are lots of rides near where the bike is built that will satisfy this. This bike will attract a lot of attention, and if it performs even so-so, it will attract a lot of buzz. Also, lose the shots of bimbos who obviously couldn't ride this thing -- it makes it seem more of a joke. "}, {"created_by": "St8kout", "created": "2015-10-21T20:32:16.673951Z", "text": "As I found out after buying a sportbike, having to hold my head up in that position gets rather uncomfortable after a while. I even had to find a new helmet that would let me see forward without having to hold my head up so high. It's not a natural position."}, {"created_by": "Timelord", "created": "2015-10-21T23:35:55.993582Z", "text": "John Aldridge, I strongly recommend you stop commenting on this story or at least get somebody skilled in PR to do it for you. Calling everybody \"wrong\" and \"trolls\" is not the way to gain customers. Your comments make you sound desperate.\n\nIf you really want to prove us wrong, enter this in an IHPVA race (where UCI or USCF rules wouldn't prohibit you from participating) or just rent a velodrome for a few hours and show us how fast it is by breaking some records. Otherwise, it's nothing more than ad copy."}, {"created_by": "WillieNAz", "created": "2015-10-22T02:45:32.576265Z", "text": "needs a chest rest otherwise the back of the shoulders would be burning from holding all your weight like that.  no way I'd buy it... I'd like to try it for a test ride, but I can't believe it would be comfortable.  my bladder hurts just looking at it.  the only up side is I would enjoy the view."}, {"created_by": "klo2001", "created": "2015-10-22T03:49:49.218640Z", "text": "I guess as long as they sell at least one to get their money back on building the silly thing in the first place"}, {"created_by": "S. Willey", "created": "2015-10-28T00:21:23.997732Z", "text": "You may not go over the handlebars on panic stop ---- but when you fall to either side you will not get your feet under to land on.  "}, {"created_by": "rpark", "created": "2015-10-29T18:34:21.240441Z", "text": "...doesn't seem safe for lower GI or abdomen w\/o better suspension- particularly for women."}, {"created_by": "StickerJim", "created": "2015-11-06T23:49:01.582594Z", "text": "As a recumbent rider, racer and builder, I'm all for different designs and thinking outside the box.  Prone bikes have been around for a long time.  Regardless of the pretty lady modelling the bike, it doesn't change the three fundamental problems with the design:\n\n1. It's difficult for the rider to see where they are going.\n2. The hip support jams the free movement of the legs, unless it is moved forward, and then it restricts the diaphragm.  Both reduce power output.\n3. Supporting the upper body is problematic.  You can support the body like this bike, and that uses a lot of muscle power in the shoulders, chest and abs, but that restricts chest expansion and the diaphragm, which reduces power output.  Conversely, you can use actual shoulder stirrups, but again, it restricts chest expansion and you still need some kind of support for the abdomen\/lower back to allow the diaphragm to operate.  Again, power reducing issues.\n\nRecumbent riders, especially racers, are more than willing to try something if it is demonstrably fast.  Prone bikes aren't as fast or as efficient as they would appear, otherwise racers would be riding them.  Graham Obree tried one, while experienced recumbent racers tried to tell him it was doomed, but he didn't listen.   "}, {"created_by": "addey", "created": "2015-12-04T13:36:26.924025Z", "text": "I'd like for my girlfriend to try this out, and for me to ride behind (on a regular bike...). The view would be great! But I'd have to give her a massage after the ride, as her back and neck would be killing her..."}, {"created_by": "thangavelu-girardey", "created": "2016-01-13T17:44:53.258110Z", "text": "Very hard on 'em neck muscles, it seems to me.\nThere have been several designs using this posture that looks good in visuals but implies a very poor understanding of how gravity plays a killer role in ergonomic dynamics."}, {"created_by": "David A Galler", "created": "2016-01-19T03:21:15.388335Z", "text": "It seems to me their would be excessive strain on the spine."}, {"created_by": "BullWhacker", "created": "2016-02-05T11:47:24.285283Z", "text": "This item is more for show than actual use.\nCan you see yourself hitting bumps on this and being in an accident?"}, {"created_by": "KentKoester", "created": "2016-04-28T05:50:10.620107Z", "text": "\"This looks like so much fun! I love the feeling of getting punched in the stomach every time I hit a bump!\" said no one ever. \n"}, {"created_by": "BillMitch", "created": "2016-05-29T18:09:17.501124Z", "text": "There's a bike in that photo?"}, {"created_by": "JimVorderstrasse", "created": "2016-05-31T19:47:56.954649Z", "text": "I saw an article in Popular Mechanics yesterday titled \"10 of the weirdest pedal-powered\nmachines to ever hit the pavement\"...They somehow missed the \"Bird of Prey\"!  I've been riding a Tour Easy recumbent by Gardner Martin since 1983.  It's hard to improve on the speed and comfort that a recumbent provides.  "}, {"created_by": "SteveEichman", "created": "2016-06-10T17:33:22.609822Z", "text": "It looks cool. Wouldnt the seating(pelvic area) and handlebars cause a  lot of upper body pressure and stress on back and shoulders,not to mention your elbows and arms as well?"}, {"created_by": "mandapau", "created": "2016-06-15T15:36:11.851039Z", "text": "The designer obviously knows nothing about ergonomics. The position in which the \"biker\" is meant to be is the worst possible one. There are tons of studies out there talking about the flaws of this \"position\". One thing is for sure great! the beautiful model riding in that position would stop traffic! what a beautiful thing to see from that angle! LOL"}, {"created_by": "BurtyBlueyes", "created": "2016-06-17T13:23:57.578642Z", "text": "A product like this needs a sell out model to promote it. Because its an idiotic invention. Proof that the world is still full of fools. This dumb bike will give you major problems in your waste, abdomen, lower back, spine, neck, and chest. Its an unnatural position to be applying tension. And whoever came up with it is a crook."}, {"created_by": "Barangolo", "created": "2016-07-19T09:00:38.388043Z", "text": "So instead of improving ergonomic posture on a bike (being challenge #1 for any serious biker), some moneymaker actually suggests to create an even bigger strain on our neck? Dream on..\nThe fundamental flaw of this concept is that it totally ignores human anatomy. Our body is built with a spine that requires an upright position to prevent injury and for nerves to function optimally. Any deviation from that creates problems: neck, spine, back, hips, etc. Current bicycles already have enough issues as is through unnatural posture and with constant need for improvement to prevent injury and strains. \nI guess with enough marketing money pumped into it, there are enough consumption zombies who are willing to support a new industry that destroys our health even more."}, {"created_by": "Edmond_V_O_Katusz", "created": "2016-07-22T16:00:08.988150Z", "text": "1936: http:\/\/blog.modernmechanix.com\/mags\/qf\/c\/ScienceAndMechanics\/1-1936\/med_slant_bike.jpg\nSalut! Edmond V.O. Katusz"}, {"created_by": "MatthewHardisty", "created": "2016-11-10T02:12:55.539616Z", "text": "bird of prey is nothing more then reverse recumbent bicycle. it isn't any faster then other bike. still have same danger as other bike on the road.  you have higher chance of getting your face smashed solid objects. higher chance of getting flatten by eighteen wheeler that don't see you in time to avoid you. if this bike were up against road racing bike it will not win any race. if you say this bike is safer & faster, prove it"}]};
+</script>
+<div id="comments"><span data-reactroot="" data-reactid="1" data-react-checksum="-1988941666"><a class="button comments__show" data-reactid="2">Show 66 comments</a></span></div>
+
+
+        
+
+    </article>
+
+    
+<div class="ad ad-native-dfp">
+    <div class="ad-inner" id="native">
+        <script type="text/javascript">
+            googletag.cmd.push(function() {
+                googletag.display("native");
+            });
+            
+        </script>
+    </div>
+</div>
+
+
+
+    
+
+    
+        <div id="subscribe_modal_container" class="jqmWindow">
+    <div class="modal_close">
+        <a href="#" class="modal_close_button close_modal">&nbsp;</a>
+    </div>
+    <div class="modal_inner">
+        <div class="modal_content">
+            <h2>Over 255,000 people receive our email newsletter</h2>
+
+            <p class="note_normal">See the stories that matter in your inbox every morning</p>
+
+            <form id="subscribe_modal" name="subscribe_modal" action="" data-tracking="form-subscribe">
+
+                <div class="form__control">
+                    <label for="modal_email">Your Email</label>
+                    <input class="form__text-field js-subscribe-email-modal" type="text" id="modal_email" />
+                </div>
+
+                <p id="modal_result"></p>
+
+                <input class="button pull-right" type="submit" value="Subscribe" />
+                <input type='hidden' name='csrfmiddlewaretoken' value='fbN7kc6eFZmIuZM0efWRMEChbavRR3KO' />
+            </form>
+
+            <div class="fb-page-wrapper">
+                <div class="fb-page" data-href="https://www.facebook.com/nwtls" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="false"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+    </section>
+
+    <section class="column--span1 column--multi js-liftigniter-column">
+
+    
+    <h2 class="column__heading">Top stories</h2>
+
+    <ul class="content-snippets content-snippets--secondary">
+        
+        <li class="content-snippet">
+            <article>
+                <a href="http://newatlas.com/nikola-trucks-salt-lake-city-launch/46796/" data-tracking="top-story">
+                    <div class="content-snippet__image">
+                        <img src="http://img-1.newatlas.com/nikola-trucks-motors-salt-lake-reveal-5.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=32%2C0%2C1784%2C1003&w=300&s=d4b80aaa40e936cd4afbdeab2de6a905" srcset="http://img-1.newatlas.com/nikola-trucks-motors-salt-lake-reveal-5.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=32%2C0%2C1784%2C1003&w=300&s=91d0b05ea208e53c5aa0ff02015c2859 2x" alt="The Nikola One hydrogen fuel cell truck was revealed at the brand&#39;s event in Salt Lake ...">
+                    </div>
+                    <div class="content-snippet__title">
+                        <h1>From render to reality: Nikola One inches closer to production</h1>
+                    </div>
+                </a>
+            </article>
+        </li>
+        
+        <li class="content-snippet">
+            <article>
+                <a href="http://newatlas.com/corbin-sparrow-2-electric-three-wheeler-dimples/46775/" data-tracking="top-story">
+                    <div class="content-snippet__image">
+                        <img src="http://img-3.newatlas.com/2017-corbin-sparrow-2-first-look-19.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=51%2C97%2C1462%2C823&w=300&s=dd1544d43a9ddcaafc25284cfb2e985e" srcset="http://img-3.newatlas.com/2017-corbin-sparrow-2-first-look-19.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=51%2C97%2C1462%2C823&w=300&s=ac216e769a94729b80166c4bf0f24d1b 2x" alt="Mike Corbin with the Sparrow 2, the first car to feature aerodynamic turbulators similar to a ...">
+                    </div>
+                    <div class="content-snippet__title">
+                        <h1>Corbin Sparrow electric three-wheeler, now with dimpled backside</h1>
+                    </div>
+                </a>
+            </article>
+        </li>
+        
+        <li class="content-snippet">
+            <article>
+                <a href="http://newatlas.com/peoples-architecture-office-mrs-fans-plugin/46779/" data-tracking="top-story">
+                    <div class="content-snippet__image">
+                        <img src="http://img-2.newatlas.com/pao-mrs-fans-plugin-house-17.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C321%2C1080%2C608&w=300&s=e985346e6796fa113e896d9d04cc18b5" srcset="http://img-2.newatlas.com/pao-mrs-fans-plugin-house-17.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C321%2C1080%2C608&w=300&s=88e7d4999367c9901bc8f71e09711f35 2x" alt="Mrs. Fan&#39;s Plugin House cost the equivalent of around US$10,000, which PAO says is 30 times ...">
+                    </div>
+                    <div class="content-snippet__title">
+                        <h1>This home could be built using a hex key in under 24 hours</h1>
+                    </div>
+                </a>
+            </article>
+        </li>
+        
+        <li class="content-snippet">
+            <article>
+                <a href="http://newatlas.com/best-vr-games-virtual-reality/46761/" data-tracking="top-story">
+                    <div class="content-snippet__image">
+                        <img src="http://img-1.newatlas.com/best-vr-games-new-24.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C0%2C1799%2C1012&w=300&s=e56dc03a926b63d15016f33c02fc70dd" srcset="http://img-1.newatlas.com/best-vr-games-new-24.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C0%2C1799%2C1012&w=300&s=e9534133e9d5f60a234a15213d8b9467 2x" alt="New Atlas rounds up the best VR games">
+                    </div>
+                    <div class="content-snippet__title">
+                        <h1>The best VR games</h1>
+                    </div>
+                </a>
+            </article>
+        </li>
+        
+    </ul>
+    
+
+    <h2 class="column__heading">Recommended for you</h2>
+
+    <ul class="content-snippets content-snippets--secondary js-liftigniter-content"></ul>
+
+    <script type="application/mustache" class="js-liftigniter-template">
+        <li class="content-snippet js-liftigniter-item liftigniter__item">
+            <article>
+                <a href="{{ url }}" data-tracking="liftigniter-item">
+                    <div class="content-snippet__image">
+                        <img src="{{ thumbnail }}" srcset="{{ thumbnailRetina }} 2x" alt="{{ altText }}" />
+                    </div>
+                    <div class="content-snippet__title">
+                        <h1>{{ title }}</h1>
+                    </div>
+                </a>
+            </article>
+        </li>
+    </script>
+
+</section>
+
+
+    <section class="column--span1 column--multi ad-column">
+
+    <div class="ad-island-top-wrapper">
+    
+<div class="ad js-ad-island-top">
+    <div class="ad-inner" id="island_top_right">
+        <script type="text/javascript">
+            googletag.cmd.push(function() {
+                googletag.display("island_top_right");
+            });
+            
+            if (typeof window.addEventListener === 'function' &&
+                document.hidden !== undefined &&
+                document.hasFocus !== undefined) {
+                (function(){
+                    var adRefreshInterval = null;
+                    var element = document.getElementById('island_top_right');
+                    window.addEventListener('scroll', function() {
+                        var rect = element.getBoundingClientRect();
+                        var inViewport = (
+                            rect.top >= 0 &&
+                            rect.left >= 0 &&
+                            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                        );
+                        if (inViewport && adRefreshInterval === null) {
+                            adRefreshInterval = setInterval(function() {
+                                refreshAd();
+                            }, 15000);
+                        }
+                        if (!inViewport) {
+                            clearInterval(adRefreshInterval);
+                            adRefreshInterval = null;
+                        }
+                    });
+                    function refreshAd() {
+                        if (document.hidden === false &&
+                            document.hasFocus() === true &&
+                            window.ENVIRONMENT === 'production') {
+                            napbjs.que.push(function() {
+                                napbjs.requestBids({
+                                    timeout: PREBID_TIMEOUT,
+                                    adUnitCodes: ['island_top_right'],
+                                    bidsBackHandler: function(bids) {
+                                        for (var i = 0; i < adUnits.length; i++) {
+                                            if (adUnits[i].getSlotElementId() === 'island_top_right') {
+                                                napbjs.setTargetingForGPTAsync(['island_top_right']);
+                                                googletag.pubads().refresh([adUnits[i]]);
+                                            }
+                                        }
+                                    }
+                                 });
+                            });
+                            _gaq.push(['_trackEvent', 'Ad refresh', 'island_top_right refreshed']);
+                        }
+                    }
+                })();
+            }
+            
+        </script>
+    </div>
+</div>
+
+
+    </div>
+
+    
+<div class="ad ">
+    <div class="ad-inner" id="skyscraper_right">
+        <script type="text/javascript">
+            googletag.cmd.push(function() {
+                googletag.display("skyscraper_right");
+            });
+            
+        </script>
+    </div>
+</div>
+
+
+
+    
+        
+<div class="ad js-ad-follower">
+    <div class="ad-inner" id="sticky_btf">
+        <script type="text/javascript">
+            googletag.cmd.push(function() {
+                googletag.display("sticky_btf");
+            });
+            
+            if (typeof window.addEventListener === 'function' &&
+                document.hidden !== undefined &&
+                document.hasFocus !== undefined) {
+                (function(){
+                    var adRefreshInterval = null;
+                    var element = document.getElementById('sticky_btf');
+                    window.addEventListener('scroll', function() {
+                        var rect = element.getBoundingClientRect();
+                        var inViewport = (
+                            rect.top >= 0 &&
+                            rect.left >= 0 &&
+                            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                        );
+                        if (inViewport && adRefreshInterval === null) {
+                            adRefreshInterval = setInterval(function() {
+                                refreshAd();
+                            }, 15000);
+                        }
+                        if (!inViewport) {
+                            clearInterval(adRefreshInterval);
+                            adRefreshInterval = null;
+                        }
+                    });
+                    function refreshAd() {
+                        if (document.hidden === false &&
+                            document.hasFocus() === true &&
+                            window.ENVIRONMENT === 'production') {
+                            napbjs.que.push(function() {
+                                napbjs.requestBids({
+                                    timeout: PREBID_TIMEOUT,
+                                    adUnitCodes: ['sticky_btf'],
+                                    bidsBackHandler: function(bids) {
+                                        for (var i = 0; i < adUnits.length; i++) {
+                                            if (adUnits[i].getSlotElementId() === 'sticky_btf') {
+                                                napbjs.setTargetingForGPTAsync(['sticky_btf']);
+                                                googletag.pubads().refresh([adUnits[i]]);
+                                            }
+                                        }
+                                    }
+                                 });
+                            });
+                            _gaq.push(['_trackEvent', 'Ad refresh', 'sticky_btf refreshed']);
+                        }
+                    }
+                })();
+            }
+            
+        </script>
+    </div>
+</div>
+
+
+    
+
+</section>
+
+
+  </div><!-- close main container -->
+
+  
+
+    <section class="slab outbrain">
+    <div class="container">
+        <div class="OUTBRAIN" data-src="http://newatlas.com/bird-of-prey-bike/39930/" data-widget-id="AR_1" data-ob-template="Gizmag"></div>
+        <script type="text/javascript" async="async" src="http://widgets.outbrain.com/outbrain.js"></script>
+    </div>
+</section>
+
+
+    
+
+    
+
+
+    <section class="slab">
+    <div class="container">
+        <h2 class="slab__heading">Latest in <a href="http://newatlas.com/bicycles/">Bicycles</a></h2>
+        <ul class="content-snippets content-snippets--grid content-snippets--secondary">
+            
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/noordung-electric-bike/46668/"
+                       title="E-bike with removable battery powers your ride and your life"
+                       data-tracking="latest-in_Bicycles">
+                        
+                        <div class="content-snippet__image">
+                            <img src="http://img-2.newatlas.com/noordung-e-bike-5.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=14%2C0%2C740%2C416&w=300&s=29b14622a877116c62f944ef806c8df5"
+                                srcset="http://img-2.newatlas.com/noordung-e-bike-5.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=14%2C0%2C740%2C416&w=300&s=4279eb8e33c71b64a3f665428eefc83f 2x"
+                                alt="E-bike with removable battery powers your ride and your life"
+                                sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        
+                        <div class="content-snippet__title">
+                            <h1>E-bike with removable battery powers your ride and your life</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/moskito-smartwatch-cycling-computer/46687/"
+                       title="Retro bike speedometer doubles as ... a smartwatch?"
+                       data-tracking="latest-in_Bicycles">
+                        
+                        <div class="content-snippet__image">
+                            <img src="http://img-3.newatlas.com/moskito-2.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C135%2C1279%2C719&w=300&s=ef3a32278c2e63e2fc626a9061916a14"
+                                srcset="http://img-3.newatlas.com/moskito-2.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C135%2C1279%2C719&w=300&s=9943119abda9995ea8140e7b77775748 2x"
+                                alt="Retro bike speedometer doubles as ... a smartwatch?"
+                                sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        
+                        <div class="content-snippet__title">
+                            <h1>Retro bike speedometer doubles as ... a smartwatch?</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/upside-rack/46659/"
+                       title="Gadget turns bicycle transit upside-down"
+                       data-tracking="latest-in_Bicycles">
+                        
+                        <div class="content-snippet__image">
+                            <img src="http://img-1.newatlas.com/upside-rack-2.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=3%2C0%2C848%2C476&w=300&s=c39fc959d7ea3bb62d99d8218b06d2b2"
+                                srcset="http://img-1.newatlas.com/upside-rack-2.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=3%2C0%2C848%2C476&w=300&s=6ce52fe632af28561c9f62a2cc4a6c7d 2x"
+                                alt="Gadget turns bicycle transit upside-down"
+                                sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        
+                        <div class="content-snippet__title">
+                            <h1>Gadget turns bicycle transit upside-down</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/lemurlock-bike-lock-lights/46627/"
+                       title="Together at last? Bike lights and a cable lock"
+                       data-tracking="latest-in_Bicycles">
+                        
+                        <div class="content-snippet__image">
+                            <img src="http://img-1.newatlas.com/lemurlock-2.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=18%2C177%2C1602%2C901&w=300&s=0d4d01493968f77c9ba11e85b4500ef3"
+                                srcset="http://img-1.newatlas.com/lemurlock-2.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=18%2C177%2C1602%2C901&w=300&s=7cf2e8a0ef229e4b5b0bc896300771e8 2x"
+                                alt="Together at last? Bike lights and a cable lock"
+                                sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        
+                        <div class="content-snippet__title">
+                            <h1>Together at last? Bike lights and a cable lock</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/kwiggle-bike-crowdfunding/46612/"
+                       title="Quirky Kwiggle folding bike reaches the last mile"
+                       data-tracking="latest-in_Bicycles">
+                        
+                        <div class="content-snippet__image">
+                            <img src="http://img-3.newatlas.com/kwiggle-folding-bike-1.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=24%2C71%2C958%2C539&w=300&s=bb1507e1ea2dc506115a1f680cb2aebd"
+                                srcset="http://img-3.newatlas.com/kwiggle-folding-bike-1.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=24%2C71%2C958%2C539&w=300&s=e55b53c49b6f12aef10ccb299542fc88 2x"
+                                alt="Quirky Kwiggle folding bike reaches the last mile"
+                                sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        
+                        <div class="content-snippet__title">
+                            <h1>Quirky Kwiggle folding bike reaches the last mile</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/maglock-vault-magnetic-pedals/46528/"
+                       title="New magnetic bike pedals take a lighter approach"
+                       data-tracking="latest-in_Bicycles">
+                        
+                        <div class="content-snippet__image">
+                            <img src="http://img-2.newatlas.com/maglock-vault-4.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C168%2C1619%2C910&w=300&s=8ede90a015800a4f73254ba249fbb461"
+                                srcset="http://img-2.newatlas.com/maglock-vault-4.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C168%2C1619%2C910&w=300&s=a283ff7e6c2df2756f83f39597cb63eb 2x"
+                                alt="New magnetic bike pedals take a lighter approach"
+                                sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        
+                        <div class="content-snippet__title">
+                            <h1>New magnetic bike pedals take a lighter approach</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/ecohelmet-james-dyson-award/46488/"
+                       title="Paper bike helmet bags James Dyson prize"
+                       data-tracking="latest-in_Bicycles">
+                        
+                        <div class="content-snippet__image">
+                            <img src="http://img-1.newatlas.com/ecohelmet-dyson-prize-8.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C57%2C800%2C450&w=300&s=59df0ce8c3dce9b576e526b7296febcd"
+                                srcset="http://img-1.newatlas.com/ecohelmet-dyson-prize-8.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C57%2C800%2C450&w=300&s=03c9a670410fbd21de494d3ba7ac047b 2x"
+                                alt="Paper bike helmet bags James Dyson prize"
+                                sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        
+                        <div class="content-snippet__title">
+                            <h1>Paper bike helmet bags James Dyson prize</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/neematic-fr1-e-bike/46371/"
+                       title="Neematic throttles forward with fast, powerful e-bike"
+                       data-tracking="latest-in_Bicycles">
+                        
+                        <div class="content-snippet__image">
+                            <img src="http://img-2.newatlas.com/neematic-fr1-e-bike-1.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C36%2C1620%2C911&w=300&s=22acf8847f3fdcae9bc34e2a2d6a7697"
+                                srcset="http://img-2.newatlas.com/neematic-fr1-e-bike-1.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C36%2C1620%2C911&w=300&s=a706b035d3352e0f4dca50dd7a94d899 2x"
+                                alt="Neematic throttles forward with fast, powerful e-bike"
+                                sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        
+                        <div class="content-snippet__title">
+                            <h1>Neematic throttles forward with fast, powerful e-bike</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/parkis-bicycle-lifting-storage/46401/"
+                       title="Spring-loaded system makes bike parking an uplifting experience"
+                       data-tracking="latest-in_Bicycles">
+                        
+                        <div class="content-snippet__image">
+                            <img src="http://img-2.newatlas.com/parkis-bicycle-lifting-storage-3.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=151%2C0%2C1103%2C620&w=300&s=ade6dacfb7a211cfb04657d3f3e47b9c"
+                                srcset="http://img-2.newatlas.com/parkis-bicycle-lifting-storage-3.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=151%2C0%2C1103%2C620&w=300&s=f7b7676c1a06916ab3572566a5b49c0a 2x"
+                                alt="Spring-loaded system makes bike parking an uplifting experience"
+                                sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        
+                        <div class="content-snippet__title">
+                            <h1>Spring-loaded system makes bike parking an uplifting experience</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/zipp-454-nsw-carbon-clincher-wheels/46329/"
+                       title="Crosswind killers: 454 NSW Carbon Clincher wheels from Zipp"
+                       data-tracking="latest-in_Bicycles">
+                        
+                        <div class="content-snippet__image">
+                            <img src="http://img-1.newatlas.com/zipp-454-nsw-carbon-clincher-wheel-22.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=92%2C96%2C1533%2C861&w=300&s=407fa6f5473e8f177ad6ae89b0eaafaa"
+                                srcset="http://img-1.newatlas.com/zipp-454-nsw-carbon-clincher-wheel-22.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=92%2C96%2C1533%2C861&w=300&s=18e7c5452f3a52777f7a47271845daa7 2x"
+                                alt="Crosswind killers: 454 NSW Carbon Clincher wheels from Zipp"
+                                sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        
+                        <div class="content-snippet__title">
+                            <h1>Crosswind killers: 454 NSW Carbon Clincher wheels from Zipp</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/xshifter-electronic-gear-shifting/46169/"
+                       title="New system brings electronic shifting to mechanical derailleurs"
+                       data-tracking="latest-in_Bicycles">
+                        
+                        <div class="content-snippet__image">
+                            <img src="http://img-1.newatlas.com/xshifter-2.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C147%2C1500%2C843&w=300&s=0a8c8714eefe009ca6aa80a083154712"
+                                srcset="http://img-1.newatlas.com/xshifter-2.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C147%2C1500%2C843&w=300&s=f36103cb3328a099352656d480c19be1 2x"
+                                alt="New system brings electronic shifting to mechanical derailleurs"
+                                sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        
+                        <div class="content-snippet__title">
+                            <h1>New system brings electronic shifting to mechanical derailleurs</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/icon-ebike-43-milano/46165/"
+                       title="Italian e-bike makes an iconic statement"
+                       data-tracking="latest-in_Bicycles">
+                        
+                        <div class="content-snippet__image">
+                            <img src="http://img-3.newatlas.com/icon-ebike-43-milano-7.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C76%2C1620%2C911&w=300&s=a2e703098d269da639604a91e05c1590"
+                                srcset="http://img-3.newatlas.com/icon-ebike-43-milano-7.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C76%2C1620%2C911&w=300&s=7cbab1165160bed37a8bfe3027c62faa 2x"
+                                alt="Italian e-bike makes an iconic statement"
+                                sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        
+                        <div class="content-snippet__title">
+                            <h1>Italian e-bike makes an iconic statement</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            
+        </ul>
+    </div>
+</section>
+
+
+    
+
+
+    
+        <section class="slab">
+    <div class="container">
+
+    <h2 class="slab__heading">Editors Choice</h2>
+
+    <ul class="content-snippets content-snippets--grid content-snippets--secondary">
+
+        
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/glen-curtiss-pioneer-aviator-land-speed-record-holder/46766/"
+                       title="The tale of the 1907 Curtiss V8, the only motorcycle ever to hold the outright land speed record"
+                       data-tracking="editors-choice">
+                        <div class="content-snippet__image">
+                            <img src="http://img-2.newatlas.com/glen-curtis-pioneer-aviator-land-speed-record-holder-12.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C0%2C1241%2C698&w=300&s=95ee6728083ea2eb6caa44bab78b12c9"
+                                 srcset="http://img-2.newatlas.com/glen-curtis-pioneer-aviator-land-speed-record-holder-12.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C0%2C1241%2C698&w=300&s=0a73fcfecd2bcb536b6ceb3a86223fb6 2x"
+                                 alt="The tale of the 1907 Curtiss V8, the only motorcycle ever to hold the outright land ..."
+                                 sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        <div class="content-snippet__title">
+                            <h1>The tale of the 1907 Curtiss V8, the only motorcycle ever to hold the outright land speed record</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/tag/product-comparison/"
+                       title="Compare the latest tech gear"
+                       data-tracking="editors-choice">
+                        <div class="content-snippet__image">
+                            <img src="http://gizmag-proxied.imgix.net/https%3A%2F%2Fgizmag-images.imgix.net%2Fnikond500-canon7dii-25.jpg%3Fauto%3Dformat%26fit%3Dmax%26h%3D670%26q%3D60%26w%3D930%26s%3D037e2207dc7485af4ead495d2796c717?auto=format%2Ccompress&fit=max&h=169&w=300&s=927026d86af9105959d8dbc3a93da601"
+                                 srcset="http://gizmag-proxied.imgix.net/https%3A%2F%2Fgizmag-images.imgix.net%2Fnikond500-canon7dii-25.jpg%3Fauto%3Dformat%26fit%3Dmax%26h%3D670%26q%3D60%26w%3D930%26s%3D037e2207dc7485af4ead495d2796c717?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&w=300&s=299eaec89e7b2701c220bfaab809970d 2x"
+                                 alt="Compare the latest tech gear"
+                                 sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        <div class="content-snippet__title">
+                            <h1>Compare the latest tech gear</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/worlds-fastest-production-car-history/46175/"
+                       title="The fastest cars in history: 1946 to now"
+                       data-tracking="editors-choice">
+                        <div class="content-snippet__image">
+                            <img src="http://img-3.newatlas.com/1945-2016-worlds-fastest-production-car-history-38.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C0%2C1383%2C778&w=300&s=f65736d64df4b04d8a1ec566b829821b"
+                                 srcset="http://img-3.newatlas.com/1945-2016-worlds-fastest-production-car-history-38.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C0%2C1383%2C778&w=300&s=8ca19ab8cde7bb9891b2dee5b10a75c9 2x"
+                                 alt="The fastest cars in history: 1946 to now"
+                                 sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        <div class="content-snippet__title">
+                            <h1>The fastest cars in history: 1946 to now</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/best-smartphones-2016/46658/"
+                       title="The best smartphones of 2016"
+                       data-tracking="editors-choice">
+                        <div class="content-snippet__image">
+                            <img src="http://img-1.newatlas.com/2016-best-smartphones-10.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C0%2C1799%2C1012&w=300&s=1d0f43058d3357689eb3c992b1da18e1"
+                                 srcset="http://img-1.newatlas.com/2016-best-smartphones-10.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C0%2C1799%2C1012&w=300&s=ec436ed748df70d23e22b130c1cdf4c4 2x"
+                                 alt="The best smartphones of 2016"
+                                 sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        <div class="content-snippet__title">
+                            <h1>The best smartphones of 2016</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/guitar-roundup-custom-objects-home/46639/"
+                       title="Turning junk into funk: Guitars made from things found around the home"
+                       data-tracking="editors-choice">
+                        <div class="content-snippet__image">
+                            <img src="http://img-1.newatlas.com/guitar-roundup-custom-objects-home-12.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C22%2C1500%2C844&w=300&s=ac2bd1103e79f8ea388797bb727ec2aa"
+                                 srcset="http://img-1.newatlas.com/guitar-roundup-custom-objects-home-12.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C22%2C1500%2C844&w=300&s=b047a4121dd900f42e235050b1867f53 2x"
+                                 alt="Turning junk into funk: Guitars made from things found around the home"
+                                 sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        <div class="content-snippet__title">
+                            <h1>Turning junk into funk: Guitars made from things found around the home</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/best-vr-2016/46609/"
+                       title="The best VR headsets of 2016"
+                       data-tracking="editors-choice">
+                        <div class="content-snippet__image">
+                            <img src="http://img-3.newatlas.com/best-vr-13.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C0%2C1799%2C1012&w=300&s=aace915fbae74ce6e263e25fcd0cfc42"
+                                 srcset="http://img-3.newatlas.com/best-vr-13.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C0%2C1799%2C1012&w=300&s=fdf4357c6a1b13cd4b755d052b692028 2x"
+                                 alt="The best VR headsets of 2016"
+                                 sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        <div class="content-snippet__title">
+                            <h1>The best VR headsets of 2016</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/south-america-oldest-tree/46629/"
+                       title="Sizing up South America&#39;s oldest living tree"
+                       data-tracking="editors-choice">
+                        <div class="content-snippet__image">
+                            <img src="http://img-3.newatlas.com/gran-abuelo-tree-25.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C18%2C1619%2C911&w=300&s=f57e73aa131611cd7f6074f3b024afce"
+                                 srcset="http://img-3.newatlas.com/gran-abuelo-tree-25.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C18%2C1619%2C911&w=300&s=a49e281cd4fc3e8c466d520013361795 2x"
+                                 alt="Sizing up South America&#39;s oldest living tree"
+                                 sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        <div class="content-snippet__title">
+                            <h1>Sizing up South America&#39;s oldest living tree</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/vanguard-roadster-motorcycle/46745/"
+                       title="Vanguard Roadster: All-new American motorcycle to debut in NYC"
+                       data-tracking="editors-choice">
+                        <div class="content-snippet__image">
+                            <img src="http://img-2.newatlas.com/vanguard-roadster-26.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C94%2C1620%2C912&w=300&s=4eb0b48301055d3e1f2bd70e1aade77b"
+                                 srcset="http://img-2.newatlas.com/vanguard-roadster-26.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C94%2C1620%2C912&w=300&s=6ebac91675e6ca13b95addeda5e221ff 2x"
+                                 alt="Vanguard Roadster: All-new American motorcycle to debut in NYC"
+                                 sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        <div class="content-snippet__title">
+                            <h1>Vanguard Roadster: All-new American motorcycle to debut in NYC</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/best-tech-home-gift-guide/46512/"
+                       title="10 top devices for the modern, connected home"
+                       data-tracking="editors-choice">
+                        <div class="content-snippet__image">
+                            <img src="http://img-2.newatlas.com/home-gift-guide-11.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C158%2C1619%2C911&w=300&s=d54539c2f7ddd2ff4db0d8f305aa9e08"
+                                 srcset="http://img-2.newatlas.com/home-gift-guide-11.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C158%2C1619%2C911&w=300&s=279d2678258f077b3dd74aa864b501cf 2x"
+                                 alt="10 top devices for the modern, connected home"
+                                 sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        <div class="content-snippet__title">
+                            <h1>10 top devices for the modern, connected home</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/budget-drones-best-2016/46707/"
+                       title="Airborne on a budget: The best drones for under $250"
+                       data-tracking="editors-choice">
+                        <div class="content-snippet__image">
+                            <img src="http://img-3.newatlas.com/drones-on-a-budget-11.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C205%2C1556%2C876&w=300&s=2f3d4d819489491213832e8c3d3ab691"
+                                 srcset="http://img-3.newatlas.com/drones-on-a-budget-11.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C205%2C1556%2C876&w=300&s=5bbeb18b68141d6815ee11e086deae44 2x"
+                                 alt="Airborne on a budget: The best drones for under $250"
+                                 sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        <div class="content-snippet__title">
+                            <h1>Airborne on a budget: The best drones for under $250</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/best-google-daydream-view-apps/46782/"
+                       title="The best Google Daydream games and apps"
+                       data-tracking="editors-choice">
+                        <div class="content-snippet__image">
+                            <img src="http://img-2.newatlas.com/best-daydream-view-games-apps-8.jpg?auto=format%2Ccompress&fit=max&h=169&q=60&rect=0%2C0%2C1799%2C1012&w=300&s=c91e10b79e0198c5e9c67d55c7de0b67"
+                                 srcset="http://img-2.newatlas.com/best-daydream-view-games-apps-8.jpg?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=0%2C0%2C1799%2C1012&w=300&s=ddc313fd1de4608c80272a888b33c7d6 2x"
+                                 alt="The best Google Daydream games and apps"
+                                 sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        <div class="content-snippet__title">
+                            <h1>The best Google Daydream games and apps</h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        
+            <li class="content-snippet">
+                <article>
+                    <a href="http://newatlas.com/google-earth-timelapse-videos-highlights/46721/"
+                       title="Google Timelapse traces 32 years of construction and destruction "
+                       data-tracking="editors-choice">
+                        <div class="content-snippet__image">
+                            <img src="http://img-3.newatlas.com/google-timelapse-1.png?auto=format%2Ccompress&fit=max&h=169&q=60&rect=147%2C0%2C715%2C402&w=300&s=52301fd90713ee838b890fce47d3d460"
+                                 srcset="http://img-3.newatlas.com/google-timelapse-1.png?auto=format%2Ccompress&dpr=2&fit=clip&h=169&q=40&rect=147%2C0%2C715%2C402&w=300&s=9328e0ce21471a2a9df25f3becb3f308 2x"
+                                 alt="Google Timelapse traces 32 years of construction and destruction"
+                                 sizes="(min-width: 320px) 100vw" />
+                        </div>
+                        <div class="content-snippet__title">
+                            <h1>Google Timelapse traces 32 years of construction and destruction </h1>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        
+
+    </ul>
+  </div>
+</section>
+
+    
+
+
+
+  <div id="subscribe-form"><script>
+    window.newatlas.props['subscribe-form'] = {"siteLabel": "newatlas", "siteName": "New Atlas", "isMobile": false};
+</script>
+<div id="subscribe-form"><div class="subscribe" data-reactroot="" data-reactid="1" data-react-checksum="1474781199"><h3 class="subscribe__heading" data-reactid="2">Over 255,000 people receive our email newsletter</h3><p data-reactid="3">See the stories that matter in your inbox every morning</p><div class="subscribe__form" data-reactid="4"><form action="javascript:void(0);" data-tracking="form-subscribe" data-reactid="5"><div class="form__control" data-reactid="6"><span data-reactid="7"><label class="form__label" for="input-InputText--email" data-reactid="8"><!-- react-text: 9 -->Email address<!-- /react-text --></label><input type="email" id="input-InputText--email" class="form__text-field form__text-field--transparent" placeholder="Enter your email address..." value="" name="email" data-reactid="10"/></span></div><div class="form__submit" data-reactid="11"><input type="submit" id="input-InputSubmit--submit" value="Subscribe" name="submit" class="button button--white" data-reactid="12"/><span data-reactid="13"></span></div></form></div><!-- react-empty: 14 --></div></div>
+</div>
+
+
+  
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer__left-block">
+
+            <ul class="footer__links">
+                <li><a href="#">Top</a></li>
+                <li><a href="http://newatlas.com/">Home</a></li>
+                <li><a href="http://newatlas.com/about/">About</a></li>
+                <li><a href="http://newatlas.com/contact/">Contact</a></li>
+                <li><a href="http://newatlas.com/privacy/">Privacy</a></li>
+                <li><a href="http://newatlas.com/termsofuse/">Terms &amp; Conditions</a></li>
+                <li><a href="http://newatlas.com/advertise/">Advertise</a></li>
+            </ul>
+            
+            <p class="footer__copyright">Copyright &copy; Gizmag Pty Ltd 2016</p>
+
+        </div>
+
+        <ul class="footer__social social-icons">
+            <li class="social-icons__twitter">
+                <a href="https://twitter.com/nwtls" title="Twitter" target="_blank"><span>Twitter</span></a>
+            </li>
+            <li class="social-icons__facebook">
+                <a href="https://www.facebook.com/nwtls" title="Facebook" target="_blank"><span>Facebook</span></a>
+            </li>
+            <li class="social-icons__rss">
+                <a href="http://newatlas.com/xml/" title="RSS" target="_blank"><span>RSS</span></a>
+            </li>
+            <li class="social-icons__flipboard">
+                <a href="https://www.flipboard.com/@NewAtlas" title="Flipboard" target="_blank"><span>Flipboard</span></a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="rebrand-link">
+    <a href="http://newatlas.com/gizmag-new-atlas/44665/">Gizmag is now New Atlas</a>
+</div>
+
+
+    
+
+</footer>
+
+
+  <script>
+    (function(){
+        // If a serverside render took place and newrelic is available
+        if (document.getElementsByClassName('subscribe__form').length !== 0 && typeof newrelic !== 'undefined') {
+            newrelic.finished();
+        };
+    })();
+</script>
+
+
+  
+  <script type="text/javascript">
+    (function() {
+        !function(o){function n(e){if(t[e])return t[e].exports;var i=t[e]={exports:{},id:e,loaded:!1};return o[e].call(i.exports,i,i.exports,n),i.loaded=!0,i.exports}var t={};return n.m=o,n.c=t,n.p="",n(0)}({0:function(o,n,t){"use strict";function e(o){return o&&o.__esModule?o:{"default":o}}function i(){if(!j){j=!0,window._sp_=window._sp_||{},H=window._sp_.config=window._sp_.config||{},K=H.content_control_callback||window._sp_lock,N=H.account_id||H.client_id||window.sp_cid;for(var o in H)T[o]=H[o]}}function r(o,n){var t=arguments.length>2&&void 0!==arguments[2]?arguments[2]:"",e=new Image;e.src="//"+E+"/cct?v="+encodeURIComponent(x)+"&ct=1&cid="+encodeURIComponent(N)+"&l="+encodeURIComponent(o.toString())+"&rc="+encodeURIComponent(n)+"&d0="+encodeURIComponent(t)}function c(o,n,t,e){var i=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{},r=arguments.length>5&&void 0!==arguments[5]&&arguments[5],d=function(){return c(o,n,t,e,i,!0)},a=r?t:d;o(n,a,e,i)}function d(o,n,t,e){var i=document.createElement("script");i.src=o,i.onload=function(){try{if(window._sp_&&window._sp_.bootstrap===p&&window.spBootstrap===u&&window._sp_.config===H){for(var o in T)if(T[o]!==H[o]){h&&h();break}}else h&&h()}catch(n){h&&h()}e.onLoad&&e.onLoad()},i.onerror=function(){function i(o,n){t(o,n),e.onError&&e.onError(n)}function r(o){return c.indexOf(o)>-1}var c=(navigator.userAgent||navigator.vendor||window.opera).toLowerCase();r("mobi")||r("ipad")||r("android")||r("iphone")?i(R):r("exabot")?i(k):r("bingbot")||r("bingpreview")?i(D):r("googlebot")||r("adsbot-google")||r("mediapartners-google")?i(L):r("googleweblight")?i(I):window.location.host===g?i(S):window.location.host.indexOf(m)>-1?i(M):r("msie 10")||r("msie 9")||r("msie 8")?i(U):a(o,n,i)},document.head.appendChild(i),document.querySelector('script[src="'+o+'"]')||window.location.host.indexOf(m)!==-1||n(O,o)}function a(o,n,t){(0,v["default"])(o,function(e,i,r,c){var d=e||i?n:t;d(c,o+"::"+r)})}function s(o,n){return A?void w(B+"::"+o,n):(r(y,o,n),void(K&&setTimeout(function(){K()},250)))}function w(o,n){r(C,o,n)}function u(o,n){i(),n&&(K=window._sp_lock=n),c(d,o,s,w)}function p(o,n){i(),c(d,o,s,w,n)}var f=t(364),l=e(f),_=t(91),v=e(_),g=["w","e","b","c","a","c","h","e",".","g","o","o","g","l","e","u","s","e","r","c","o","n","t","e","n","t",".","c","o","m"].join(""),m=["o","p","t","i","m","i","z","e","l","y","p","r","e","v","i","e","w",".","c","o","m"].join(""),h=void 0;try{h=window._sp_&&window._sp_.config&&window._sp_.config.spid_control_callback}catch(b){}var E=l["default"].be.join(""),x=l["default"].bv,C=0,y=1,O="s",R="m",L="g",S="gw",I="gl",U="i",D="b",k="e",B="n",M="o",T={},j=!1,A=!1,H=void 0,K=void 0,N=void 0;window.addEventListener("beforeunload",function(){A=!0});try{window._sp_=window._sp_||{},window._sp_.bootstrap=p,window.spBootstrap=u,window._sp_.bootstrap===p&&window.spBootstrap===u||h&&h()}catch(b){h&&h()}},91:function(o,n){"use strict";function t(o,n){function t(){try{return window.performance.now()}catch(o){return Date.now()}}var a=document.createElement("a");if(a.href=o,"https:"===window.location.protocol&&a.protocol!==window.location.protocol)return void n(!1,!1,a.protocol,d);var s=new XMLHttpRequest;try{s.open("GET",o)}catch(w){return void n(!0,!1,w.toString(),r,s)}var u=void 0,p=void 0;s.onloadstart=function(){u=t()},s.onreadystatechange=function(){if(4===this.readyState){p=t()-u;var o=0===this.status,r="2"===this.status.toString()[0],c=r?i:e;return void n(o,r,this.status+"::"+p,c,s)}};try{s.send()}catch(w){return void n(!0,!1,w.toString(),c,s)}}Object.defineProperty(n,"__esModule",{value:!0}),n["default"]=t;var e=n.NETWORK_FAILURE="n",i=n.XHR_SUCCEEDED="nx",r=n.OPEN_BLOCKED="xo",c=n.SEND_BLOCKED="xs",d=n.PROTOCOL_MISMATCH="p"},364:function(o,n){"use strict";o.exports={be:["w","w","w",".","b","e","e","f","t","r","a","n","s","m","i","s","s","i","o","n",".","c","o","m"],bv:"1.7.508"}}});
+//# sourceMappingURL=https://s3.amazonaws.com/d3jlsadfjkuern/1.7.508/Ym9vdHN0cmFwLmpz.map
+
+        window._sp_ = window._sp_ || {};
+        window._sp_.config = window._sp_.config || {};
+        window._sp_.config.account_id = 306;
+
+        window._sp_.config.content_control_callback = function() {
+            
+// Lock messages: if we want to display alternate content (ad or lock message) for users
+// SP detects this, and redirect to a control page
+// aimed at adblock community members: "you have not written a successful rule"
+console.info('content_control_callback');
+
+        };
+
+        window._sp_.config.mms_domain = 'mms.newatlas.com';
+
+        window._sp_.mms = window._sp_.mms || {};
+        window._sp_.mms.cmd = window._sp_.mms.cmd || [];
+
+        window._sp_.config.mms_client_data_callback = function(o) {
+            
+if (typeof window.newatlas === 'undefined') window.newatlas = {};
+window.newatlas.spv = true;
+console.info('mms_client_data_callback', o);
+
+        };
+
+        window ._sp_.config.mms_choice_selected_callback = function (choiceID) {
+            
+var choices = [
+    '',
+    'Whitelist',
+    'Opt-in Recovery',
+    'Alt Ad'
+];
+console.info( "mms_choice_selected_callback", choiceID, choices[choiceID]);
+
+        };
+
+        window._sp_.mms.cmd.push(function() {
+            
+// set K/V pairs for tracking
+// useful for targeting delivery of specific message content based on meta data on page
+var na_render_test_article = /10526\/?$/.test(window.location.pathname);
+console.info('na_render_test_article', na_render_test_article);
+window._sp_.mms.setTargeting("na_sp_test", na_render_test_article);
+
+// demo setting:
+// window._sp_.mms.setTargeting("x", "y");
+
+        });
+
+        // tell the messaging library that all params are set and it can proceed
+        window._sp_.mms.cmd.push(function() {
+            window._sp_.mms.startMsg();
+        });
+        window._sp_.bootstrap("https://production-assetsbucket-wvksza8x3q2f.s3.amazonaws.com/c72a6c7a148451dcb35a6bdd1836e56bfa480d22/messaging.js");
+        window._sp_.bootstrap("https://production-assetsbucket-wvksza8x3q2f.s3.amazonaws.com/c72a6c7a148451dcb35a6bdd1836e56bfa480d22/mms-client.js");
+    })();
+</script>
+  
+
+  <script src="https://d2n36zyhledaqq.cloudfront.net/c72a6c7a148451dcb35a6bdd1836e56bfa480d22/liftigniter.js" async></script>
+  <script src="https://d2n36zyhledaqq.cloudfront.net/c72a6c7a148451dcb35a6bdd1836e56bfa480d22/public.js" async></script>
+
+  <script type="text/javascript">
+	var clicky_site_ids = clicky_site_ids || [];
+	clicky_site_ids.push(110681);
+	(function() {
+	  var s = document.createElement('script');
+	  s.type = 'text/javascript';
+	  s.async = true;
+	  s.src = '//static.getclicky.com/js';
+	  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+	})();
+</script>
+
+<!-- Chartbeat Tracking Code -->
+<script type="text/javascript">
+    var _sf_async_config = {};
+    /** CONFIGURATION START **/
+    _sf_async_config.uid = 4159;
+    _sf_async_config.domain = 'newatlas.com';
+    _sf_async_config.useCanonical = true;
+    
+    
+    _sf_async_config.sections = 'Bicycles';
+    
+    
+    _sf_async_config.authors = 'Ben Coxworth';
+    
+    /** CONFIGURATION END **/
+    (function(){
+      function loadChartbeat() {
+        window._sf_endpt=(new Date()).getTime();
+        var e = document.createElement('script');
+        e.setAttribute('language', 'javascript');
+        e.setAttribute('type', 'text/javascript');
+        e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+        document.body.appendChild(e);
+      }
+      var oldonload = window.onload;
+      window.onload = (typeof window.onload != 'function') ?
+         loadChartbeat : function() { oldonload(); loadChartbeat(); };
+    })();
+</script>
+
+  
+
+<script type="text/javascript" src="//s.skimresources.com/js/3971X1552461.skimlinks.js" async></script>
+
+
+
+  
+
+
+  
+<div class="ad hide">
+    <div class="ad-inner" id="1x1">
+        <script type="text/javascript">
+            googletag.cmd.push(function() {
+                googletag.display("1x1");
+            });
+            
+        </script>
+    </div>
+</div>
+
+
+</body>
+</html>
