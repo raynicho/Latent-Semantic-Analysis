@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 
 #search terms:
 query_vector = []
+<<<<<<< HEAD
 query_vector.append('fly')
 query_vector.append('car')
 query_vector.append('bird')
@@ -10,6 +11,18 @@ query_vector.append('speed')
 query_vector.append('motorcycle')
 
 #fly car bird speed motorcycle
+=======
+query_vector.append('fast')
+query_vector.append('plane')
+query_vector.append('animal')
+query_vector.append('computer')
+query_vector.append('scary')
+query_vector.append('death')
+query_vector.append('fire')
+query_vector.append('car')
+query_vector.append('truck')
+#fast plane animal computer scary death fire car truck
+>>>>>>> dc17469d3e61a50be2db239d0f79d1a8d2ca6be2
 
 #get the stopwords
 stopwords = []
@@ -25,6 +38,7 @@ for word in stopwords:
 
 #define pages and urls
 page_dict = {}
+
 
 #google	
 page_dict["google_0"] = "google_0.htm" #http://www.samsonmotorworks.com/switchblade
@@ -62,6 +76,7 @@ page_dict["yahoo_7"] = "yahoo_7.htm" #http://www.dailymail.co.uk/sciencetech/art
 page_dict["yahoo_8"] = "yahoo_8.htm" #http://www.revzilla.com/common-tread/polaris-slingshot
 page_dict["yahoo_9"] = "yahoo_9.htm" #http://newatlas.com/bird-of-prey-bike/39930/
 									 #https://www.pinterest.com/pin/463518986619187113/ was the next link if we want to skip yt
+
 #for each file in the pages
 doc_terms_dict = {}
 for file in page_dict:
